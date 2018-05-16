@@ -8,17 +8,17 @@ html {
           height: 8em;
           width: 8em;
           background-color: $primaryColor;
-          border-radius: 50em;
-          text-align: center;
+          border-radius: 50em; //Gør div'en til en cirkel
+          text-align: center; //Centrerer ikoner på begge led
           vertical-align: middle;
           display: table-cell;
 
           .icon {
             max-width: 55%;
             vertical-align: middle;
-            transition: 0.2s;
+            transition: 0.2s; //Animeret overgang ved hover
             &:hover {
-              max-width: 70%;
+              max-width: 70%;//Forstør ved hover
             }
           }
         }
