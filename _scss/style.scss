@@ -1,0 +1,28 @@
+$primaryColor: #293952;
+
+html {
+  body {
+    main {
+      nav {
+        .bgicon {
+          height: 8em;
+          width: 8em;
+          background-color: $primaryColor;
+          border-radius: 50em;
+          text-align: center;
+          vertical-align: middle;
+          display: table-cell;
+
+          .icon {
+            max-width: 55%;
+            vertical-align: middle;
+            transition: 0.2s;
+            &:hover {
+              max-width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

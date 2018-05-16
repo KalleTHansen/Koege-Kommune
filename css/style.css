@@ -1,0 +1,18 @@
+html body main nav .bgicon {
+  height: 8em;
+  width: 8em;
+  background-color: #293952;
+  border-radius: 50em;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+html body main nav .bgicon .icon {
+  max-width: 55%;
+  vertical-align: middle;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+html body main nav .bgicon .icon:hover {
+  max-width: 70%;
+}
