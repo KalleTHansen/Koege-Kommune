@@ -13,6 +13,15 @@ html body main nav article.category {
   background-color: #eee;
   border: 1px solid grey;
   text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+html body main nav article.category:hover {
+  background-color: white;
+}
+html body main nav article.category:hover .icon {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
 }
 html body main nav article.category table.center {
   margin: 0 auto;
@@ -31,8 +40,4 @@ html body main nav article.category .bgicon .icon {
   transition: 0.2s;
   width: 55%;
   vertical-align: middle;
-}
-html body main nav article.category .bgicon .icon:hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
 }

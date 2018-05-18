@@ -11,19 +11,28 @@ html {
         }
 
         article {
-          &.category {
+          &.category {//Hver kasse med en kategori
             width: 20%;
             padding: 2em;
             margin: 1em;
             background-color: $backgroundColor;
             border: 1px solid grey;
             text-align: center;
+            transition: 0.2s; //Overgang til anden farve ved hover
 
-            table.center {
+            &:hover {
+              background-color: white; //Baggrundsfarve på .category kassen
+
+            .icon { //.icon = descendant of .category
+              transform: scale(1.3,1.3);//Forstør ikon ved hover
+              }
+            }//End .category hover
+
+            table.center {//Centrering af bgicon
               margin: 0 auto;
             }
 
-            .bgicon {
+            .bgicon {//Blå cirkel bag kat. ikoner
               height: 8em;
               width: 8em;
               background-color: $primaryColor;
@@ -36,9 +45,6 @@ html {
                 transition: 0.2s; //Animeret overgang ved hover
                 width: 55%;
                 vertical-align: middle;
-                &:hover {
-                  transform: scale(1.3,1.3);//Forstør ved hover
-                }
               }
             }
           }
