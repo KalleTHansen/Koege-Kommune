@@ -12,11 +12,16 @@ html {
 
         article {
           &.category {
-            width: 20em;
+            width: 20%;
             padding: 2em;
             margin: 1em;
             background-color: $backgroundColor;
             border: 1px solid grey;
+            text-align: center;
+
+            table.center {
+              margin: 0 auto;
+            }
 
             .bgicon {
               height: 8em;
@@ -28,11 +33,11 @@ html {
               vertical-align: middle;
 
               .icon {
-                max-width: 55%;
                 transition: 0.2s; //Animeret overgang ved hover
+                width: 55%;
                 vertical-align: middle;
                 &:hover {
-                  max-width: 70%;//Forstør ved hover
+                  transform: scale(1.3,1.3);//Forstør ved hover
                 }
               }
             }

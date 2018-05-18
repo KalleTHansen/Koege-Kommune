@@ -7,11 +7,15 @@ html body main nav#navgrid {
   display: flex;
 }
 html body main nav article.category {
-  width: 20em;
+  width: 20%;
   padding: 2em;
   margin: 1em;
   background-color: #eee;
   border: 1px solid grey;
+  text-align: center;
+}
+html body main nav article.category table.center {
+  margin: 0 auto;
 }
 html body main nav article.category .bgicon {
   height: 8em;
@@ -23,11 +27,12 @@ html body main nav article.category .bgicon {
   vertical-align: middle;
 }
 html body main nav article.category .bgicon .icon {
-  max-width: 55%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  width: 55%;
   vertical-align: middle;
 }
 html body main nav article.category .bgicon .icon:hover {
-  max-width: 70%;
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
 }
