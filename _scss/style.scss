@@ -18,33 +18,19 @@ html {
             background-color: $backgroundColor;
             border: 1px solid grey;
 
-            section {
-              float:right;//Tekst ved siden af ikon
-
-              h3 {
-              }
-
-              ul {
-                padding-left: 20px;
-                li {
-
-                }
-              }
-            }
             .bgicon {
               height: 8em;
               width: 8em;
               background-color: $primaryColor;
               border-radius: 50em; //Gør div'en til en cirkel
-              text-align: center; //Centrerer ikoner på begge led
-              vertical-align: middle;//Til centrering
-              display: table-cell;//Til centrering
-            //display: inline-block;//Så teksten kan stå ved siden af ikon
+              display: table-cell;
+              text-align: center;
+              vertical-align: middle;
 
               .icon {
                 max-width: 55%;
-                vertical-align: middle;
                 transition: 0.2s; //Animeret overgang ved hover
+                vertical-align: middle;
                 &:hover {
                   max-width: 70%;//Forstør ved hover
                 }
