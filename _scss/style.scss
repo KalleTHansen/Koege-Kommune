@@ -13,11 +13,11 @@ html {
 
         article {
           &.category {//Hver kasse med en kategori
-            width: 20em;
-            height: 11em;
+            width: 24vw;
+            height: auto;
             flex-grow: 1;
-            padding: 2em;
-            margin: 1em;
+            padding: 3vw;
+            margin: 2vw;
             background-color: $backgroundColor;
             border: 1px solid grey;
             text-align: center;
@@ -31,16 +31,21 @@ html {
               }
             }//End .category hover
 
+            h3 {
+              margin-bottom: 0.8em;
+              font-size: 4vw;
+            }
+
             table.center {//Centrering af bgicon
               margin: 0 auto;
             }
 
             .bgicon {//Blå cirkel bag kat. ikoner
-              height: 13vmin;
-              width: 13vmin;
+              height: 16vmin;
+              width: 16vmin;
               background-color: $primaryColor;
-              border-radius: 50em; //Gør div'en til en cirkel
-              display: table-cell;
+              border-radius: 50%; //Gør div'en til en cirkel
+              display: table-cell;//Centrering
               text-align: center;
               vertical-align: middle;
 
