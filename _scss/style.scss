@@ -8,11 +8,14 @@ html {
       nav {
         &#navgrid {
           display: flex;//Til at sætte kasser på linje + wrap
+          flex-wrap: wrap;
         }
 
         article {
           &.category {//Hver kasse med en kategori
-            width: 20%;
+            width: 20em;
+            height: 11em;
+            flex-grow: 1;
             padding: 2em;
             margin: 1em;
             background-color: $backgroundColor;
@@ -23,7 +26,7 @@ html {
             &:hover {
               background-color: white; //Baggrundsfarve på .category kassen
 
-            .icon { //.icon = descendant of .category
+            .icon { //.icon = descendant of .category. Nested in previous hover (same as &:hover .icon)
               transform: scale(1.3,1.3);//Forstør ikon ved hover
               }
             }//End .category hover
@@ -33,8 +36,8 @@ html {
             }
 
             .bgicon {//Blå cirkel bag kat. ikoner
-              height: 8em;
-              width: 8em;
+              height: 13vmin;
+              width: 13vmin;
               background-color: $primaryColor;
               border-radius: 50em; //Gør div'en til en cirkel
               display: table-cell;
@@ -45,9 +48,9 @@ html {
                 transition: 0.2s; //Animeret overgang ved hover
                 width: 55%;
                 vertical-align: middle;
-              }
+              }//End .icon
             }
-          }
+          }//End .category
         }
       }
     }
