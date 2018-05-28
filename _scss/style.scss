@@ -68,3 +68,24 @@ html {
     width: 22vw;
   }
 }
+
+@media only screen and (min-width: 600px) {
+html body main nav article.category {//Hver kasse med en kategori
+            width: 22vw;
+            height: auto;
+            padding: 2vw;
+            margin: 1vw;
+          }
+}
+
+@media only screen and (min-width: 900px) {
+  #navgrid {
+    max-width: 1100px;
+  }
+  html body main nav article.category {//Hver kasse med en kategori
+              width: 16vw;
+              height: auto;
+              padding: 2vw;
+              margin: 1vw;
+            }
+  }
