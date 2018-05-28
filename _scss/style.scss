@@ -2,6 +2,7 @@ $primaryColor: #293952;
 $backgroundColor: #eee;
 $textColor: #000;
 
+* {box-sizing: border-box;}
 html {
   body {
     font-family: sans-serif;
@@ -13,20 +14,19 @@ html {
         }
 
         a {
+          margin: 2vw;
           color: $textColor;
           text-decoration: none;
-          font-size: 0.8em;}
 
           article {
             &.category {//Hver kasse med en kategori
-              width: 24vw;
+              width: 42vw;
               height: auto;
-              flex-grow: 1;
               padding: 3vw;
-              margin: 2vw;
               background-color: $backgroundColor;
               border: 1px solid grey;
               text-align: center;
+              flex-grow: 1;
               transition: 0.2s; //Overgang til anden farve ved hover
 
               &:hover {
@@ -60,7 +60,7 @@ html {
                   width: 55%;
                   vertical-align: middle;
                   }//End .icon
-              
+              }
             }//End .category
           }//article end
         }//A end
@@ -71,27 +71,35 @@ html {
 
 
 @media only screen and (min-width: 600px) {
-html body main nav article.category {//Hver kasse med en kategori
-            width: 22vw;
-            height: auto;
-            padding: 2vw;
-            margin: 1vw;
-          }
+  html body main nav a {
+    margin: 1vw;
+  }
 
-html body main nav article.category h3 {
-font-size: 1.1em;
+  html body main nav a article.category {//Hver kasse med en kategori
+    width: 30vw;
+    height: auto;
+    padding: 2vw;
+
+  }
+
+  html body main nav a article.category h3 {
+    font-size: 1.1em;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) and (orientation: landscape) {
   #navgrid {
     margin: auto;
     max-width: 1100px;
   }
-  html body main nav article.category {//Hver kasse med en kategori
-              width: 11em;
-              height: auto;
-              padding: 1.2em;
-              margin: 0.6em;
-            }
+
+  html body main nav a {
+    margin: 0.6em;
   }
+
+  html body main nav a article.category {//Hver kasse med en kategori
+    width: 13em;
+    height: auto;
+    padding: 1.2em;
+  }
+}
