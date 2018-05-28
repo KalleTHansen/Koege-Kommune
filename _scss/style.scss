@@ -11,6 +11,7 @@ html {
         &#navgrid {
           display: flex;//Til at sætte kasser på linje + wrap
           flex-wrap: wrap;
+          justify-content: center; //Centrerer kategorier
         }
 
         a {
@@ -87,7 +88,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 900px) and (orientation: landscape) {
+@media only screen and (min-width: 900px) {
   #navgrid {
     margin: auto;
     max-width: 1100px;

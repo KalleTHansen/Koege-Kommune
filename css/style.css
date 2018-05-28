@@ -12,6 +12,9 @@ html body main nav#navgrid {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 html body main nav a {
   margin: 2vw;
@@ -76,7 +79,7 @@ html body main nav a article.category .bgicon .icon {
     font-size: 1.1em;
   }
 }
-@media only screen and (min-width: 900px) and (orientation: landscape) {
+@media only screen and (min-width: 900px) {
   #navgrid {
     margin: auto;
     max-width: 1100px;
