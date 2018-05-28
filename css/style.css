@@ -51,3 +51,9 @@ html body main nav article.category .bgicon .icon {
   width: 55%;
   vertical-align: middle;
 }
+
+@media only screen and (min-width: 500px) {
+  html body main nav article.category {
+    width: 22vw;
+  }
+}
