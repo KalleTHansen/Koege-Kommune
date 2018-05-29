@@ -39,9 +39,8 @@ html body {
     padding: 15px 0 15px 0;
     border-bottom: #dddddd 1px solid; }
   html body .menu li:hover {
-    display: block;
+    /*display: block;*/
     background: #ffffff;
-    padding: 15px 0 15px 0;
     border-bottom: #dddddd 1px solid; }
   html body .menu ul li a {
     text-decoration: none;
@@ -124,16 +123,20 @@ html body {
   .menuicons {
     display: none; }
 
+  html body nav.menu {
+    background: none; }
+
   .menu ul a li {
     display: inline;
-    padding: 0;
+    padding: 0 1em;
     border: none;
-    background: none; }
+    background: none;
+    font-size: 1.3em; }
     .menu ul a li:hover {
       display: inline;
       background: none;
       border: none;
-      padding: 0; }
+      padding: 0 1em; }
 
   /*.menu {z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1; text-align:center; font-size:12px;}
   .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
