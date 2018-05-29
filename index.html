@@ -112,10 +112,10 @@
     <script>
       $( document ).ready(function() {
 
-      $( "#cross" ).hide();
-      $( ".menu" ).hide();
-      $( ".search" ).hide();
-      $( "#closesearch" ).hide();
+      $( "#cross" ).hide();//Luk menu knap
+      $( ".menu" ).hide();//Menu
+      $( ".search" ).hide();//Søgefelt
+      $( "#closesearch" ).hide();//Luk søg knap
 
       $( "#hamburger" ).click(function() { //Åbne menu
         $( ".search" ).hide();
@@ -160,6 +160,27 @@
       });
       });
 
+
+
+      var $window = $(window);
+
+      function checkWidth() {
+          var windowsize = $window.width();
+          if (windowsize >= 950) {
+              //if the window is greater than or equal to 950px wide then show menu.
+              $( ".menu" ).show();//Menu;
+          }
+          if (windowsize < 950) {
+              //if the window is less than 950px wide then hide menu.
+              $( ".menu" ).hide();//Menu;
+              $( "#cross" ).hide();//Luk menu knap
+              $( "#hamburger" ).show();
+          }
+      }
+      // Execute on load
+      checkWidth();
+      // Bind event listener
+      $(window).resize(checkWidth);
       });
     </script>
   </body>
