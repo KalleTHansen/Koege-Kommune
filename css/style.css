@@ -6,6 +6,14 @@
 html body {
   font-family: sans-serif;
 }
+html body header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+html body header nav ul li {
+  display: inline;
+  margin: 1.5em;
+}
 html body main nav#navgrid {
   display: -webkit-box;
   display: -ms-flexbox;
