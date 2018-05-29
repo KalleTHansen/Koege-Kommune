@@ -6,13 +6,67 @@
 html body {
   font-family: sans-serif;
 }
-html body header nav ul {
-  list-style-type: none;
-  padding: 0;
+html body header {
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-html body header nav ul li {
+html body header h2 {
   display: inline;
-  margin: 1.5em;
+}
+html body header .menuicons {
+  margin-left: 1em;
+}
+html body header .menuicons img {
+  width: 3em;
+}
+html body .menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f1f1f1;
+  /*position:absolute; */
+  text-align: center;
+  font-size: 12px;
+}
+html body .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+html body .menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+html body .menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+html body .menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+html body .menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+html body .menu a {
+  text-decoration: none;
+  color: #666;
+}
+html body .menu a:hover {
+  text-decoration: none;
+  color: #666;
 }
 html body main nav#navgrid {
   display: -webkit-box;

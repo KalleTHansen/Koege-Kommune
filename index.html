@@ -8,17 +8,22 @@
   <body>
     <header>
       <h2>Køge kommune</h2>
-      <nav>
-        <ul>
-          <li>Borger</li>
-          <li>Erhverv</li>
-          <li>Kommunen</li>
-          <li>Byråd</li>
-        </ul>
-      </nav>
-        <img src="img/icons/menu.png" alt="menu">  <!--Icon made by Chris Veigt on flaticon.com-->
+      <div class="menuicons">
+        <img src="img/icons/menu.png" id="hamburger" alt="menu">  <!--Icon made by Chris Veigt on flaticon.com-->
+        <img src="img/icons/cancel.png" id="cross" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
         <img src="img/icons/search.png" alt="Søg"> <!--Icon made by Lucy G on flaticon.com-->
+      </div>
     </header>
+
+    <nav class="menu">
+      <ul>
+        <a href="index.html"><li>Borger</li></a>
+        <a href="erhverv.html"><li>Erhverv</li></a>
+        <a href="kommunen.html"><li>Kommunen</li></a>
+        <a href="byråd.html"><li>Byråd</li></a>
+      </ul>
+    </nav>
+
     <main>
       <nav id="navgrid">
 
@@ -97,5 +102,27 @@
       </nav>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+
+      $( "#cross" ).hide();
+      $( ".menu" ).hide();
+      $( "#hamburger" ).click(function() {
+      $( ".menu" ).slideToggle( "fast", function() {
+      $( "#hamburger" ).hide();
+      $( "#cross" ).show();
+      });
+      });
+
+      $( "#cross" ).click(function() {
+      $( ".menu" ).slideToggle( "fast", function() {
+      $( "#cross" ).hide();
+      $( "#hamburger" ).show();
+      });
+      });
+
+      });
+    </script>
   </body>
 </html>
