@@ -17,9 +17,11 @@ html {
         display: inline;
       }
         .menuicons {
-          margin-left: 1em;
-          //float: right;
-          img {
+          position:absolute;
+          right:0;
+          margin-right: 1em;
+
+          img {//menu og søg
             width: 3em;
           }
         }

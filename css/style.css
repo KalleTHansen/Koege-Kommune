@@ -19,7 +19,9 @@ html body header h2 {
   display: inline;
 }
 html body header .menuicons {
-  margin-left: 1em;
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
 }
 html body header .menuicons img {
   width: 3em;
