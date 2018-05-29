@@ -11,7 +11,8 @@
       <div class="menuicons">
         <img src="img/icons/menu.png" id="hamburger" alt="menu">  <!--Icon made by Chris Veigt on flaticon.com-->
         <img src="img/icons/cancel.png" id="cross" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
-        <img src="img/icons/search.png" alt="Søg"> <!--Icon made by Lucy G on flaticon.com-->
+        <img src="img/icons/search.png" id="searchicon" alt="Søg"> <!--Icon made by Lucy G on flaticon.com-->
+        <img src="img/icons/cancel.png" id="closesearch" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
       </div>
     </header>
 
@@ -23,6 +24,11 @@
         <a href="byråd.html"><li>Byråd</li></a>
       </ul>
     </nav>
+
+    <form class="search">
+      <input id="searchfield" type="text" placeholder="Søg...">
+      <input id="searchbutton" type="submit" value="Søg">
+    </form>
 
     <main>
       <nav id="navgrid">
@@ -108,19 +114,49 @@
 
       $( "#cross" ).hide();
       $( ".menu" ).hide();
-      $( "#hamburger" ).click(function() {
+      $( ".search" ).hide();
+      $( "#closesearch" ).hide();
+
+      $( "#hamburger" ).click(function() { //Åbne menu
+        $( ".search" ).hide();
         $( "#hamburger" ).hide();
         $( "#cross" ).show();
+
+        if ( $("#searchicon").css('display') == 'none' ){//Søgeikon er usynlig, søgekryds er synlig
+          $( "#searchicon" ).show();
+          $( "#closesearch" ).hide();
+        }
       $( ".menu" ).slideToggle( "fast", function() {
-
       });
       });
 
-      $( "#cross" ).click(function() {
+      $( "#cross" ).click(function() { //Lukke menu
         $( "#cross" ).hide();
         $( "#hamburger" ).show();
       $( ".menu" ).slideToggle( "fast", function() {
+      });
+      });
 
+      $( "#searchicon" ).click(function() { //Klikke på søgeicon
+        $( ".menu" ).hide();
+        $( "#searchicon" ).hide();
+        $( "#closesearch" ).show();
+
+        if ( $("#hamburger").css('display') == 'none' ){// Hamburger er usynlig, menukryds er synlig
+          $( "#hamburger" ).show();
+          $( "#cross" ).hide();
+        }
+      $( ".search" ).slideToggle( "fast", function() {
+      });
+      });
+
+      $( "#closesearch" ).click(function() { //Klikke på luk søgefunktion
+        $( "#searchicon" ).show();
+        $( "#closesearch" ).hide();
+
+        $( "#hamburger" ).show();
+
+      $( ".search" ).slideToggle( "fast", function() {
       });
       });
 

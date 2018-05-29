@@ -56,6 +56,10 @@ html body {
   html body .menu a:hover {
     text-decoration: none;
     color: #666; }
+  html body form.search {
+    text-align: center; }
+    html body form.search #searchfield {
+      width: 70vw; }
   html body main nav#navgrid {
     display: -webkit-box;
     display: -ms-flexbox;
