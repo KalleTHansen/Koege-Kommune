@@ -37,12 +37,10 @@
       </form>
     </header>
 
-
-
     <main>
       <nav id="navgrid">
 
-        <a href="Pas og koerekort.html" class="catlink"><article class="category">
+        <a href="Pas-og-koerekort.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/id.png" alt="Pas og kørekort">
@@ -51,7 +49,7 @@
           <h3>Pas og kørekort</h3>
         </article></a>
 
-        <a href="Affald og miljoe.html" class="catlink"><article class="category">
+        <a href="Affald-og-miljoe.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/trash.png" alt="Affald og miljø">
@@ -60,7 +58,7 @@
           <h3>Affald og miljø</h3>
         </article></a>
 
-        <a href="Bolig og byggeri.html" class="catlink"><article class="category">
+        <a href="Bolig-og-byggeri.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/house.png" alt="Bolig og byggeri">
@@ -69,7 +67,7 @@
           <h3>Bolig og byggeri</h3>
         </article></a>
 
-        <a href="Familie og unge.html" class="catlink"><article class="category">
+        <a href="Familie-og-unge.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/family.png" alt="Familie og unge">
@@ -78,7 +76,7 @@
           <h3>Familie og unge</h3>
         </article></a>
 
-          <a href="Ældre og sundhed.html" class="catlink"><article class="category">
+          <a href="Ældre-og-sundhed.html" class="catlink"><article class="category">
             <table class="center">
                 <td class="bgicon">
                     <img class="icon" src="img/icons/heart.png" alt="Ældre og sundhed">
@@ -87,7 +85,7 @@
           <h3>Ældre og sundhed</h3>
         </article></a>
 
-        <a href="Job og ledighed.html" class="catlink"><article class="category">
+        <a href="Job-og-ledighed.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/briefcase.png" alt="Job og ledighed">
@@ -96,7 +94,7 @@
           <h3>Job og ledighed</h3>
         </article></a>
 
-        <a href="Trafik og veje.html" class="catlink"><article class="category">
+        <a href="Trafik-og-veje.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/traffic.png" alt="Trafik og veje">
@@ -105,7 +103,7 @@
           <h3>Trafik og veje</h3>
         </article></a>
 
-        <a href="Kultur og fritid.html" class="catlink"><article class="category">
+        <a href="Kultur-og-fritid.html" class="catlink"><article class="category">
           <table class="center">
             <td class="bgicon">
               <img class="icon" src="img/icons/culture.png" alt="Kultur og fritid">
@@ -118,83 +116,6 @@
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $( document ).ready(function() {
-
-      $( "#cross" ).hide();//Luk menu knap
-      $( ".menu" ).hide();//Menu
-      $( ".search" ).hide();//Søgefelt
-      $( "#closesearch" ).hide();//Luk søg knap
-
-      $( "#hamburger" ).click(function() { //Åbne menu
-        $( ".search" ).hide();
-        $( "#hamburger" ).hide();
-        $( "#cross" ).show();
-
-        if ( $("#searchicon").css('display') == 'none' ){//Søgeikon er usynlig, søgekryds er synlig
-          $( "#searchicon" ).show();
-          $( "#closesearch" ).hide();
-        }
-      $( ".menu" ).slideToggle( "fast", function() {
-      });
-      });
-
-      $( "#cross" ).click(function() { //Lukke menu
-        $( "#cross" ).hide();
-        $( "#hamburger" ).show();
-      $( ".menu" ).slideToggle( "fast", function() {
-      });
-      });
-
-      $( "#searchicon" ).click(function() { //Klikke på søgeicon
-        $( ".menu" ).hide();
-        $( "#searchicon" ).hide();
-        $( "#closesearch" ).show();
-
-        if ( $("#hamburger").css('display') == 'none' ){// Hamburger er usynlig, menukryds er synlig
-          $( "#hamburger" ).show();
-          $( "#cross" ).hide();
-        }
-      $( ".search" ).slideToggle( "fast", function() {
-      });
-      });
-
-      $( "#closesearch" ).click(function() { //Klikke på luk søgefunktion
-        $( "#searchicon" ).show();
-        $( "#closesearch" ).hide();
-
-        $( "#hamburger" ).show();
-
-      $( ".search" ).slideToggle( "fast", function() {
-      });
-      });
-
-
-
-      var $window = $(window);
-
-      function checkWidth() {
-          var windowsize = $window.width();
-          if (windowsize >= 950) {
-              //if the window is greater than or equal to 950px wide then show menu.
-              $( ".menu" ).show();//Menu;
-              $( ".search" ).show();//Search;
-          }
-          else {
-              //if the window is less than 950px wide then hide menu.
-              $( ".menu" ).hide();//Menu;
-              $( "#cross" ).hide();//Luk menu knap
-              $( "#hamburger" ).show();
-              $( ".search" ).hide();//Search bar;
-              $( "#searchicon" ).show();
-              $( "#closesearch" ).hide();
-          }
-      }
-      // Execute on load
-      checkWidth();
-      // Bind event listener
-      $(window).resize(checkWidth);
-      });
-    </script>
+    <script src="js/jqheader.js"></script>
   </body>
 </html>
