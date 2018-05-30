@@ -13,8 +13,17 @@ html {
       display: flex;
       align-items: center;
 
-      h2 { //Koege kommune navn
-        display: inline;
+      a {
+        text-decoration: none;
+        img {
+          margin: 1em 1em 0 0;
+          height: 4em;
+          display: none;
+        }
+        h2 { //Koege kommune navn
+          display: inline;
+          color: $textColor;
+        }
       }
 
       .menuicons {
@@ -130,6 +139,22 @@ html {
 }
 
 @media only screen and (min-width: 950px) {//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER!
+
+  html body {
+    header {
+      height: auto;
+      a {
+        img {
+        display: block;
+        margin: 0 1em 0 0;
+        }
+        h2 {
+          word-spacing: 100vw;//Force line break (Køge kommune)
+          margin-top: 1.5em;
+        }
+      }
+    }
+  }
   .menuicons {//Både burger og søg
     display: none;
   }
