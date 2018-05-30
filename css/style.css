@@ -175,20 +175,20 @@ html body main nav a article.category .bgicon .icon {
     word-spacing: 100vw;
     margin-top: 1.5em;
   }
-  html body .menuicons {
+  html body header .menuicons {
     display: none;
   }
-  html body html body header nav.menu {
+  html body header html body header nav.menu {
     background: none;
   }
-  html body html body header nav.menu ul li {
+  html body header html body header nav.menu ul li {
     display: inline;
     padding: 0 1em;
     border: none;
     background: none;
     font-size: 1.3em;
   }
-  html body html body header nav.menu ul li:hover {
+  html body header html body header nav.menu ul li:hover {
     display: inline;
     background: none;
     border: none;
