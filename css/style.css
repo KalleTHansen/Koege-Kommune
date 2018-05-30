@@ -16,6 +16,9 @@ html body {
             align-items: center; }
   html body header a {
     text-decoration: none; }
+    html body header a#contact {
+      color: #000;
+      display: none; }
     html body header a img {
       margin: 1em 1em 0 0;
       height: 4em;
@@ -161,6 +164,8 @@ html body {
         border: none; }
         html body header nav.menu ul li {
           border: none; }
+          html body header nav.menu ul li:last-of-type {
+            display: none; }
           html body header nav.menu ul li:hover {
             border: none;
             background: none; }
@@ -173,10 +178,14 @@ html body {
               display: inline;
               background: none;
               padding: 0 1em; }
+    html body header a#contact {
+      text-align: right;
+      display: block;
+      margin-bottom: 0.5em; }
     html body header form.search {
       display: inline;
       float: right;
-      margin-top: -1.6em; }
+      margin-top: -2.6em; }
       html body header form.search #searchfield {
         width: 12em; }
 

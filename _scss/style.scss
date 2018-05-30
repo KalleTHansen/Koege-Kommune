@@ -18,6 +18,12 @@ html {
 
       a {
         text-decoration: none;
+
+        &#contact {//Kontakt og åbningstider link i header
+          color: $textColor;
+          display: none;
+        }
+
         img {
           margin: 1em 1em 0 0;
           height: 4em;
@@ -183,6 +189,9 @@ html {
 
         li {
           border: none;
+          &:last-of-type {//Det sidste punkt på listen: Kontakt og åbningstider
+            display: none;
+          }
           &:hover {
             border: none;
             background: none;
@@ -200,14 +209,21 @@ html {
               padding: 0 1em;
             }
           }
+
         }//li end
       }//ul end
     }//nav.menu end
 
+    a#contact {
+      text-align: right;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
     form.search {
         display: inline;
         float: right;
-        margin-top: -1.6em;
+        margin-top: -2.6em;
 
     #searchfield {
             width: 12em;
