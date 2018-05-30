@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="da" dir="ltr">
+<html lang="da-DK" dir="ltr">
   <head>
+    <meta name="robots" content="noindex, follow">
     <meta charset="utf-8">
     <title>Køge kommune</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-      <a href="index.html"><h2>Køge kommune</h2></a>
-      
-      <div class="menuicons">
-        <img src="img/icons/menu.png" id="hamburger" alt="menu">  <!--Icon made by Chris Veigt on flaticon.com-->
-        <img src="img/icons/cancel.png" id="cross" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
-        <img src="img/icons/search.png" id="searchicon" alt="Søg"> <!--Icon made by Lucy G on flaticon.com-->
-        <img src="img/icons/cancel.png" id="closesearch" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
-      </div>
+      <section class="name-and-menu">
+
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        <a href="index.html"><h2>Køge kommune</h2></a>
+
+        <div class="menuicons">
+          <img src="img/icons/menu.png" id="hamburger" alt="Menu">  <!--Icon made by Chris Veigt on flaticon.com-->
+          <img src="img/icons/cancel.png" id="cross" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
+          <img src="img/icons/search.png" id="searchicon" alt="Søg"> <!--Icon made by Lucy G on flaticon.com-->
+          <img src="img/icons/cancel.png" id="closesearch" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
+        </div>
+      </section>
+
+      <nav class="menu">
+        <ul>
+          <a href="index.html"><li>Borger</li></a>
+          <a href="erhverv.html"><li>Erhverv</li></a>
+          <a href="kommunen.html"><li>Kommunen</li></a>
+          <a href="byråd.html"><li>Byråd</li></a>
+        </ul>
+      </nav>
+
+      <form class="search">
+        <input id="searchfield" type="text" placeholder="Søg...">
+        <input id="searchbutton" type="submit" value="Søg">
+      </form>
     </header>
 
-    <nav class="menu">
-      <ul>
-        <a href="index.html"><li>Borger</li></a>
-        <a href="erhverv.html"><li>Erhverv</li></a>
-        <a href="kommunen.html"><li>Kommunen</li></a>
-        <a href="byråd.html"><li>Byråd</li></a>
-      </ul>
-    </nav>
 
-    <form class="search">
-      <input id="searchfield" type="text" placeholder="Søg...">
-      <input id="searchbutton" type="submit" value="Søg">
-    </form>
 
     <main>
       <nav id="navgrid">

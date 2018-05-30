@@ -7,11 +7,13 @@ $textColor: #000;
 html {
   body {
     font-family: sans-serif;
-
+    margin: 0;
     header {
+      .name-and-menu{
       height: 3em;
       display: flex;
       align-items: center;
+      }
 
       a {
         text-decoration: none;
@@ -35,7 +37,7 @@ html {
           width: 3em;
         }
       }
-    }//header end
+
 
     .menu {z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  /*position:absolute; */text-align:center; font-size:12px;}
     .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
@@ -53,6 +55,7 @@ html {
         width: 70vw;
       }
     }
+  }//header end
 
     main {
       nav {
@@ -142,7 +145,10 @@ html {
 
   html body {
     header {
+      .name-and-menu {
+      position: absolute; //Rykker nav og søg op på linje
       height: auto;
+      }
       a {
         img {
         display: block;
@@ -154,7 +160,7 @@ html {
         }
       }
     }
-  }
+
   .menuicons {//Både burger og søg
     display: none;
   }
@@ -177,7 +183,7 @@ html {
       padding: 0 1em;
     }
   }
-
+}
   /*.menu {z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1; text-align:center; font-size:12px;}
   .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
   .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
