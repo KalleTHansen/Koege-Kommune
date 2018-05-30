@@ -157,7 +157,7 @@ html body main nav a article.category .bgicon .icon {
     font-size: 1.1em;
   }
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 950px) and (-webkit-max-device-pixel-ratio: 2) {
   html body header {
     height: auto;
   }
