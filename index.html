@@ -9,6 +9,7 @@
     <header>
       <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
       <a href="index.html"><h2>Køge kommune</h2></a>
+      
       <div class="menuicons">
         <img src="img/icons/menu.png" id="hamburger" alt="menu">  <!--Icon made by Chris Veigt on flaticon.com-->
         <img src="img/icons/cancel.png" id="cross" alt="Luk"> <!--Icon made by Chris Veigt on flaticon.com-->
@@ -172,7 +173,7 @@
               $( ".menu" ).show();//Menu;
               $( ".search" ).show();//Search;
           }
-          if (windowsize < 950) {
+          else {
               //if the window is less than 950px wide then hide menu.
               $( ".menu" ).hide();//Menu;
               $( "#cross" ).hide();//Luk menu knap
