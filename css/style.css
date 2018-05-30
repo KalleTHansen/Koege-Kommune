@@ -68,9 +68,10 @@ html body {
     text-decoration: none;
     color: #666; }
   html body header form.search {
-    text-align: center; }
-    html body header form.search #searchfield {
-      width: 70vw; }
+    text-align: center;
+    /*  #searchfield { //Kan ikke overskrives i @media???
+        width: 70vw;
+      }*/ }
   html body main nav#navgrid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,11 +173,12 @@ html body {
               display: inline;
               background: none;
               padding: 0 1em; }
-    html body header form .search {
+    html body header form.search {
+      display: inline;
       float: right;
-      margin-top: 2.5em; }
-      html body header form .search input #searchfield {
-        width: 25%; }
+      margin-top: -1.6em; }
+      html body header form.search #searchfield {
+        width: 12em; }
 
   #navgrid {
     margin: auto;

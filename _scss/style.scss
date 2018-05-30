@@ -52,9 +52,9 @@ html {
     form.search {
       text-align: center;
 
-      #searchfield {
+    /*  #searchfield { //Kan ikke overskrives i @media???
         width: 70vw;
-      }
+      }*/
     }
   }//header end
 
@@ -204,18 +204,15 @@ html {
       }//ul end
     }//nav.menu end
 
+    form.search {
+        display: inline;
+        float: right;
+        margin-top: -1.6em;
 
-
-    form .search {
-      float: right;
-      margin-top: 2.5em;
-
-      input {
-        #searchfield {
-          width: 25%;
+    #searchfield {
+            width: 12em;
+          }
         }
-      }
-    }
   }//Header end
 }//Body end
 
