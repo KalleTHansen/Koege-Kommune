@@ -175,6 +175,8 @@ html body {
     html body header form .search {
       float: right;
       margin-top: 2.5em; }
+      html body header form .search input #searchfield {
+        width: 25%; }
 
   #navgrid {
     margin: auto;

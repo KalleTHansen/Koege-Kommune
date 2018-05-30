@@ -203,9 +203,18 @@ html {
         }//li end
       }//ul end
     }//nav.menu end
+
+
+
     form .search {
       float: right;
       margin-top: 2.5em;
+
+      input {
+        #searchfield {
+          width: 25%;
+        }
+      }
     }
   }//Header end
 }//Body end
