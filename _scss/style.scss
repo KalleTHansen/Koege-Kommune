@@ -2,11 +2,12 @@ $primaryColor: #293952;
 $backgroundColor: #eee;
 $accentColor: #0fcfbf;
 $textColor: #000;
+$headingFont: 'Roboto Slab', serif;
+$mainFont: 'Roboto', sans-serif;
 
 * {box-sizing: border-box;}
 html {
   body {
-    font-family: sans-serif;
     margin: 0; //Fixer at navgrid går på én række
     header {
       margin-bottom: 1em;
@@ -25,6 +26,7 @@ html {
           &#contact {//Kontakt og åbningstider link i header
             color: $textColor;
             display: none;
+            font-family: $mainFont;
           }
 
           img {
@@ -35,6 +37,7 @@ html {
           h2 { //Koege kommune navn
             display: inline;
             color: $primaryColor;
+            font-family: $headingFont;
           }
         }
 
@@ -55,11 +58,11 @@ html {
       }
 
 
-    .menu {z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  /*position:absolute; */text-align:center; font-size:12px;}
+    .menu {z-index:1000000; font-weight: normal; font-size:0.8em; width:100%; background:#f1f1f1;  /*position:absolute; */text-align:center; font-size:12px;}
     .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
     .menu li {display: block;  border-bottom:#dddddd 1px solid;}
     .menu li:hover{/*display: block;*/ background:#eaeaea; border-bottom:#dddddd 1px solid;}
-    .menu ul li a { text-decoration:none; padding:15px 0 15px 0; margin: 0px; color:$primaryColor; display: block; width: 100%; height: 100%;}
+    .menu ul li a {font-family: $headingFont; text-decoration:none; padding:15px 0 15px 0; margin: 0px; color:$primaryColor; display: block; width: 100%; height: 100%;}
     .menu ul li a:hover {  color: #666; text-decoration:none;}
     .menu a{text-decoration:none; color:#666;}
     .menu a:hover{text-decoration:none; color: $accentColor;}
@@ -99,6 +102,14 @@ html {
   }//header end
 
     main {
+      h1 {
+        font-family: $headingFont;
+      }
+
+      p {
+        font-family: $mainFont;
+      }
+
       nav {
         &#navgrid {
           display: flex;//Til at sætte kasser på linje + wrap
@@ -133,6 +144,8 @@ html {
               h3 {
                 margin-bottom: 0.8em;
                 font-size: 0.8em;
+                font-family: $headingFont;
+                font-weight: normal;
               }
 
               table.center {//Centrering af bgicon
@@ -183,7 +196,7 @@ html {
   html body {
     header {
       height: 5em;
-      margin: auto auto 1.5em;
+      margin: auto auto 3.5em;
       max-width: 1200px;
 
       .name-and-menu {
@@ -266,11 +279,15 @@ html {
           }
         }
   }//Header end
+
+  main {
+    margin: auto;
+    max-width: 1100px;
+  }
 }//Body end
 
   #navgrid {//Kategorier
-    margin: auto;
-    max-width: 1100px;
+
   }
 
   html body main nav a.catlink {
