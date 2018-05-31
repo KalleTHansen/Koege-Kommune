@@ -31,9 +31,9 @@ html body {
     right: 0;
     margin-right: 8px; }
     html body header .menuicons img {
-      width: 3em; }
-    html body header .menuicons #hamburger {
-      margin-right: 0.3em; }
+      width: 2em; }
+    html body header .menuicons #hamburger, html body header .menuicons #cross {
+      margin-right: 1em; }
   html body header .menu {
     z-index: 1000000;
     font-weight: bold;
@@ -83,6 +83,7 @@ html body {
       padding: 0.38em 0.3em 0.2em;
       margin-right: -0.9em; }
     html body header form.search #searchbutton {
+      -webkit-appearance: none;
       background-color: #293952;
       border: #293952;
       border-radius: 5px;

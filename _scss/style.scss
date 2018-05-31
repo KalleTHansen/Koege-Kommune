@@ -43,11 +43,11 @@ html {
         margin-right: 8px;
 
         img {//menu og søg
-          width: 3em;
+          width: 2em;
           }
 
-          #hamburger {
-            margin-right: 0.3em;
+          #hamburger, #cross {
+            margin-right: 1em;
           }
 
       }
@@ -77,6 +77,7 @@ html {
       }
 
       #searchbutton {
+        -webkit-appearance: none;
         background-color: $primaryColor;
         border: $primaryColor;
         border-radius: 5px;
