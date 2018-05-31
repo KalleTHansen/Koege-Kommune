@@ -38,11 +38,16 @@ html {
       .menuicons {
         position:absolute;//Kan ikke floates, alternativ
         right:0;
-        margin-right: 1em;
+        margin-right: 8px;
 
         img {//menu og søg
           width: 3em;
-        }
+          }
+          
+          #hamburger {
+            margin-right: 0.3em;
+          }
+
       }
 
 

@@ -29,9 +29,11 @@ html body {
   html body header .menuicons {
     position: absolute;
     right: 0;
-    margin-right: 1em; }
+    margin-right: 8px; }
     html body header .menuicons img {
       width: 3em; }
+    html body header .menuicons #hamburger {
+      margin-right: 0.3em; }
   html body header .menu {
     z-index: 1000000;
     font-weight: bold;
