@@ -6,7 +6,7 @@ html body {
   font-family: sans-serif;
   margin: 0; }
   html body header .name-and-menu {
-    margin: 8px;
+    margin: 15px 8px 10px;
     height: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53,7 +53,7 @@ html body {
     border-bottom: #dddddd 1px solid; }
   html body header .menu li:hover {
     /*display: block;*/
-    background: #ffffff;
+    background: #eaeaea;
     border-bottom: #dddddd 1px solid; }
   html body header .menu ul li a {
     text-decoration: none;
@@ -71,7 +71,9 @@ html body {
     color: #666; }
   html body header .menu a:hover {
     text-decoration: none;
-    color: #666; }
+    color: #0fcfbf; }
+  html body header #currentPage {
+    color: #0fcfbf; }
   html body header form.search {
     text-align: center; }
     html body header form.search #searchfield {
@@ -88,7 +90,9 @@ html body {
       padding: 0.001em 0.5em 0.2em;
       font-size: 1.5em;
       line-height: 22px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: 0.1s;
+      transition: 0.1s; }
       html body header form.search #searchbutton:hover {
         background-color: #0fcfbf;
         color: #293952; }
@@ -107,7 +111,7 @@ html body {
     text-decoration: none; }
     html body main nav a article.category {
       width: 42vw;
-      height: auto;
+      height: 100%;
       padding: 3vw;
       background-color: #eee;
       border: 1px solid grey;
@@ -147,7 +151,6 @@ html body {
 
   html body main nav a article.category {
     width: 30vw;
-    height: auto;
     padding: 2vw; }
 
   html body main nav a article.category h3 {
@@ -170,35 +173,37 @@ html body {
         width: 30%; }
       html body header .name-and-menu .menuicons {
         display: none; }
-    html body header nav.menu {
+    html body header .menu {
       background: none;
       max-width: 1200px; }
-      html body header nav.menu ul {
+      html body header .menu ul {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
         margin-top: 2.5em;
         border: none; }
-        html body header nav.menu ul li {
+        html body header .menu ul li {
           border: none; }
-          html body header nav.menu ul li:last-of-type {
+          html body header .menu ul li:last-of-type {
             display: none; }
-          html body header nav.menu ul li:hover {
+          html body header .menu ul li:hover {
             border: none;
             background: none; }
-          html body header nav.menu ul li a {
+          html body header .menu ul li a {
             display: inline;
             padding: 0 1em;
             background: none;
             font-size: 2em; }
-            html body header nav.menu ul li a:hover {
+            html body header .menu ul li a:hover {
               display: inline;
               background: none;
               padding: 0 1em; }
     html body header a#contact {
       text-align: right;
       display: block;
-      margin-bottom: 0.5em; }
+      margin-bottom: 0.5em;
+      -webkit-transition: 0.1s;
+      transition: 0.1s; }
       html body header a#contact:hover {
         color: #0fcfbf; }
     html body header form.search {
@@ -217,5 +222,4 @@ html body {
 
   html body main nav a article.category {
     width: 13em;
-    height: auto;
     padding: 1.2em; } }
