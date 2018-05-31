@@ -58,9 +58,30 @@ html {
     form.search {
       text-align: center;
 
-    /*  #searchfield { //Kan ikke overskrives i @media???
-        width: 70vw;
-      }*/
+      #searchfield {
+        //width: 70vw; //Kan ikke overskrives i @media???
+        width: 18.9em;
+        border: 2px solid $primaryColor;
+        border-radius: 5px;
+        padding: 0.38em 0.3em 0.2em;
+        margin-right: -0.9em;
+      }
+
+      #searchbutton {
+        background-color: $primaryColor;
+        border: $primaryColor;
+        border-radius: 5px;
+        color: white;
+        padding: 0.001em 0.5em 0.2em;
+        font-size: 1.5em;
+        line-height: 22px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $accentColor;
+          color: $primaryColor;
+        }
+      }
     }
   }//header end
 
@@ -218,12 +239,16 @@ html {
       text-align: right;
       display: block;
       margin-bottom: 0.5em;
+
+      &:hover {
+        color: $accentColor;
+      }
     }
 
     form.search {
         display: inline;
         float: right;
-        margin-top: -2.6em;
+        margin: -2.6em 8px 0;
 
     #searchfield {
             width: 12em;

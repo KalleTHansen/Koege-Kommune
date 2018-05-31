@@ -71,10 +71,25 @@ html body {
     text-decoration: none;
     color: #666; }
   html body header form.search {
-    text-align: center;
-    /*  #searchfield { //Kan ikke overskrives i @media???
-        width: 70vw;
-      }*/ }
+    text-align: center; }
+    html body header form.search #searchfield {
+      width: 18.9em;
+      border: 2px solid #293952;
+      border-radius: 5px;
+      padding: 0.38em 0.3em 0.2em;
+      margin-right: -0.9em; }
+    html body header form.search #searchbutton {
+      background-color: #293952;
+      border: #293952;
+      border-radius: 5px;
+      color: white;
+      padding: 0.001em 0.5em 0.2em;
+      font-size: 1.5em;
+      line-height: 22px;
+      cursor: pointer; }
+      html body header form.search #searchbutton:hover {
+        background-color: #0fcfbf;
+        color: #293952; }
   html body main nav#navgrid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,10 +197,12 @@ html body {
       text-align: right;
       display: block;
       margin-bottom: 0.5em; }
+      html body header a#contact:hover {
+        color: #0fcfbf; }
     html body header form.search {
       display: inline;
       float: right;
-      margin-top: -2.6em; }
+      margin: -2.6em 8px 0; }
       html body header form.search #searchfield {
         width: 12em; }
 
