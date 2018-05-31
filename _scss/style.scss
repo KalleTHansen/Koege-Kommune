@@ -9,6 +9,8 @@ html {
     font-family: sans-serif;
     margin: 0; //Fixer at navgrid går på én række
     header {
+      margin-bottom: 1em;
+
       .name-and-menu{
       margin: 15px 8px 10px; //8px = Standard body margin
       height: 3em;
@@ -181,7 +183,7 @@ html {
   html body {
     header {
       height: 5em;
-      margin: auto;
+      margin: auto auto 1.5em;
       max-width: 1200px;
 
       .name-and-menu {
@@ -279,4 +281,8 @@ html {
     width: 13em;
     padding: 1.2em;
   }
-}
+
+  html body main nav a article.top3 {
+    width: 17.75em;
+  }
+}//@media 950px end
