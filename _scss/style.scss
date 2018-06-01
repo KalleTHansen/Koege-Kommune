@@ -7,7 +7,9 @@ $headingFont: 'Roboto Slab', serif;
 $mainFont: 'Roboto', sans-serif;
 
 * {box-sizing: border-box;}
+
 html {
+
   body {
     margin: 0; //Fixer at navgrid går på én række
     header {
@@ -103,7 +105,7 @@ html {
   }//header end
 
     main {
-      &.homeGrid{
+      &.homeMain{
         margin: auto;
         max-width: 1100px;
       }
@@ -160,6 +162,7 @@ html {
               text-align: center;
               flex-grow: 1;
               transition: 0.2s; //Overgang til anden farve ved hover
+              border-radius: 5px;
 
               &:hover {
                 background-color: white; //Baggrundsfarve på .category kassen
@@ -209,6 +212,11 @@ html {
   html body main.pasOgKoerekort {
     background: linear-gradient(rgba(7,92,209,0.7), rgba(7,92,209,0.7)), url(../img/pas3.jpg) no-repeat right;
     background-size: auto 100%;
+  }
+
+  html body main nav a article.category .bgicon {
+    height: 14vmin;
+    width: 14vmin;
   }
 
   html body main nav a.catlink {
@@ -333,11 +341,21 @@ html {
 @media only screen and (min-width: 1100px) {
   html body main nav a.catlink {
     margin: 0.6em;
+
+    img{
+      &#house {//Så ikonerne ikke føles tunge i top eller bund
+        margin-top: -0.8em;
+      }
+      &#heart {
+        margin-bottom: -0.8em;
+      }
+    }
   }
 
   html body main nav a article.category {//Hver kasse med en kategori
     width: 15.98em;
     padding: 1.2em;
+    border-radius: 10px;
   }
 
   html body main nav a article.top3 {
