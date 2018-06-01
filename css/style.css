@@ -5,7 +5,7 @@
 html body {
   margin: 0; }
   html body header {
-    margin-bottom: 1em; }
+    margin-bottom: 1.5em; }
     html body header .name-and-menu {
       margin: 15px 8px 10px;
       height: 3em;
@@ -103,10 +103,17 @@ html body {
           color: #293952; }
   html body main h1 {
     font-family: "Roboto Slab", serif;
-    margin-left: 8px; }
+    margin: 0.2em 8px 0.5em; }
   html body main p {
     font-family: "Roboto", sans-serif;
     margin-left: 8px; }
+    html body main p.breadcrumb {
+      margin-bottom: 0.2em; }
+      html body main p.breadcrumb a {
+        color: #000;
+        text-decoration: none; }
+        html body main p.breadcrumb a:hover {
+          color: #0fcfbf; }
   html body main nav#navgrid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,7 +231,9 @@ html body {
         width: 12em; }
   html body main {
     margin: auto;
-    max-width: 1100px; } }
+    max-width: 1100px; }
+    html body main h1 {
+      margin: 0.5em 8px; } }
 @media only screen and (min-width: 1100px) {
   html body main nav a.catlink {
     margin: 0.6em; }

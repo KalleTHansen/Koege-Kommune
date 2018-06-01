@@ -10,7 +10,7 @@ html {
   body {
     margin: 0; //Fixer at navgrid går på én række
     header {
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
 
       .name-and-menu{
       margin: 15px 8px 10px; //8px = Standard body margin
@@ -104,12 +104,24 @@ html {
     main {
       h1 {
         font-family: $headingFont;
-        margin-left: 8px;
+        margin: 0.2em 8px 0.5em;
       }
 
       p {
         font-family: $mainFont;
         margin-left: 8px;
+
+        &.breadcrumb {
+          margin-bottom: 0.2em;
+          a {
+            color: $textColor;
+            text-decoration: none;
+
+            &:hover {
+              color: $accentColor;
+            }
+          }
+        }
       }
 
       nav {
@@ -285,6 +297,10 @@ html {
   main {
     margin: auto;
     max-width: 1100px;
+
+    h1 {
+    margin: 0.5em 8px;
+    }
   }
 }//Body end
 
