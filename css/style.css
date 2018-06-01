@@ -77,7 +77,8 @@ html body {
   html body header #currentPage {
     color: #0fcfbf; }
   html body header form.search {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 1em; }
     html body header form.search #searchfield {
       width: 18.9em;
       border: 2px solid #293952;
