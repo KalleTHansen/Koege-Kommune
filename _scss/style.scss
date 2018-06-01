@@ -102,6 +102,14 @@ html {
   }//header end
 
     main {
+
+      &.pasOgKoerekort{
+        background: linear-gradient(rgba(7,92,209,0.7), rgba(7,92,209,0.7)), url(../img/pas3.jpg) no-repeat right;
+        background-size: auto 100%;
+
+
+      }
+
       h1 {
         font-family: $headingFont;
         margin: 0.2em 8px 0.5em;
@@ -295,8 +303,12 @@ html {
   }//Header end
 
   main {
-    margin: auto;
-    max-width: 1100px;
+
+    .mainpage { //Tillader fuldskærms bg img på main
+      margin: auto;
+      max-width: 1100px;
+    }
+
 
     h1 {
     margin: 0.5em 8px;
