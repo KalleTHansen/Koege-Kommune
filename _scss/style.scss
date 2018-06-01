@@ -2,6 +2,7 @@ $primaryColor: #293952;
 $backgroundColor: #eee;
 $accentColor: #0fcfbf;
 $textColor: #000;
+$invTextColor: white;
 $headingFont: 'Roboto Slab', serif;
 $mainFont: 'Roboto', sans-serif;
 
@@ -10,7 +11,6 @@ html {
   body {
     margin: 0; //Fixer at navgrid går på én række
     header {
-      margin-bottom: 1.5em;
 
       .name-and-menu{
       margin: 15px 8px 10px; //8px = Standard body margin
@@ -102,27 +102,32 @@ html {
   }//header end
 
     main {
+      &.homeGrid{
+        margin: auto;
+        max-width: 1100px;
+      }
 
       &.pasOgKoerekort{
-        background: linear-gradient(rgba(7,92,209,0.7), rgba(7,92,209,0.7)), url(../img/pas3.jpg) no-repeat right;
-        background-size: auto 100%;
-
-
+        padding: 1em 0;
+        background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
+        background-size: 100% auto;
       }
 
       h1 {
         font-family: $headingFont;
         margin: 0.2em 8px 0.5em;
+        color: $invTextColor;
       }
 
       p {
         font-family: $mainFont;
         margin-left: 8px;
+        color: $invTextColor;
 
         &.breadcrumb {
           margin-bottom: 0.2em;
           a {
-            color: $textColor;
+            color: $invTextColor;
             text-decoration: none;
 
             &:hover {
@@ -199,6 +204,12 @@ html {
 
 
 @media only screen and (min-width: 600px) {
+
+  html body main.pasOgKoerekort {
+    background: linear-gradient(rgba(7,92,209,0.7), rgba(7,92,209,0.7)), url(../img/pas3.jpg) no-repeat right;
+    background-size: auto 100%;
+  }
+
   html body main nav a.catlink {
     margin: 1vw;
   }
@@ -218,7 +229,7 @@ html {
   html body {
     header {
       height: 5em;
-      margin: auto auto 3.5em;
+      margin: auto auto 1.5em;
       max-width: 1200px;
 
       .name-and-menu {

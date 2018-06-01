@@ -4,117 +4,121 @@
 
 html body {
   margin: 0; }
-  html body header {
-    margin-bottom: 1.5em; }
-    html body header .name-and-menu {
-      margin: 15px 8px 10px;
-      height: 3em;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    html body header a {
-      text-decoration: none; }
-      html body header a#contact {
-        color: #000;
-        display: none;
-        font-family: "Roboto", sans-serif; }
-      html body header a img {
-        margin: 1em 1em 0 0;
-        height: 4em;
-        display: none; }
-      html body header a h2 {
-        display: inline;
-        color: #293952;
-        font-family: "Roboto Slab", serif; }
-    html body header .menuicons {
-      position: absolute;
-      right: 0;
-      margin-right: 8px; }
-      html body header .menuicons img {
-        width: 2em; }
-      html body header .menuicons #hamburger, html body header .menuicons #cross {
-        margin-right: 1em; }
-    html body header .menu {
-      z-index: 1000000;
-      font-weight: normal;
-      font-size: 0.8em;
-      width: 100%;
-      background: #f1f1f1;
-      /*position:absolute; */
-      text-align: center;
-      font-size: 12px; }
-    html body header .menu ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      list-style-image: none; }
-    html body header .menu li {
-      display: block;
-      border-bottom: #dddddd 1px solid; }
-    html body header .menu li:hover {
-      /*display: block;*/
-      background: #eaeaea;
-      border-bottom: #dddddd 1px solid; }
-    html body header .menu ul li a {
-      font-family: "Roboto Slab", serif;
-      text-decoration: none;
-      padding: 15px 0 15px 0;
-      margin: 0px;
+  html body header .name-and-menu {
+    margin: 15px 8px 10px;
+    height: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  html body header a {
+    text-decoration: none; }
+    html body header a#contact {
+      color: #000;
+      display: none;
+      font-family: "Roboto", sans-serif; }
+    html body header a img {
+      margin: 1em 1em 0 0;
+      height: 4em;
+      display: none; }
+    html body header a h2 {
+      display: inline;
       color: #293952;
-      display: block;
-      width: 100%;
-      height: 100%; }
-    html body header .menu ul li a:hover {
-      color: #666;
-      text-decoration: none; }
-    html body header .menu a {
-      text-decoration: none;
-      color: #666; }
-    html body header .menu a:hover {
-      text-decoration: none;
-      color: #0fcfbf; }
-    html body header #currentPage {
-      color: #0fcfbf; }
-    html body header form.search {
-      text-align: center; }
-      html body header form.search #searchfield {
-        width: 18.9em;
-        border: 2px solid #293952;
-        border-radius: 5px;
-        padding: 0.38em 0.3em 0.2em;
-        margin-right: -0.9em; }
-      html body header form.search #searchbutton {
-        -webkit-appearance: none;
-        background-color: #293952;
-        border: #293952;
-        border-radius: 5px;
-        color: white;
-        padding: 0.001em 0.5em 0.2em;
-        font-size: 1.5em;
-        line-height: 22px;
-        cursor: pointer;
-        -webkit-transition: 0.1s;
-        transition: 0.1s; }
-        html body header form.search #searchbutton:hover {
-          background-color: #0fcfbf;
-          color: #293952; }
+      font-family: "Roboto Slab", serif; }
+  html body header .menuicons {
+    position: absolute;
+    right: 0;
+    margin-right: 8px; }
+    html body header .menuicons img {
+      width: 2em; }
+    html body header .menuicons #hamburger, html body header .menuicons #cross {
+      margin-right: 1em; }
+  html body header .menu {
+    z-index: 1000000;
+    font-weight: normal;
+    font-size: 0.8em;
+    width: 100%;
+    background: #f1f1f1;
+    /*position:absolute; */
+    text-align: center;
+    font-size: 12px; }
+  html body header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none; }
+  html body header .menu li {
+    display: block;
+    border-bottom: #dddddd 1px solid; }
+  html body header .menu li:hover {
+    /*display: block;*/
+    background: #eaeaea;
+    border-bottom: #dddddd 1px solid; }
+  html body header .menu ul li a {
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    padding: 15px 0 15px 0;
+    margin: 0px;
+    color: #293952;
+    display: block;
+    width: 100%;
+    height: 100%; }
+  html body header .menu ul li a:hover {
+    color: #666;
+    text-decoration: none; }
+  html body header .menu a {
+    text-decoration: none;
+    color: #666; }
+  html body header .menu a:hover {
+    text-decoration: none;
+    color: #0fcfbf; }
+  html body header #currentPage {
+    color: #0fcfbf; }
+  html body header form.search {
+    text-align: center; }
+    html body header form.search #searchfield {
+      width: 18.9em;
+      border: 2px solid #293952;
+      border-radius: 5px;
+      padding: 0.38em 0.3em 0.2em;
+      margin-right: -0.9em; }
+    html body header form.search #searchbutton {
+      -webkit-appearance: none;
+      background-color: #293952;
+      border: #293952;
+      border-radius: 5px;
+      color: white;
+      padding: 0.001em 0.5em 0.2em;
+      font-size: 1.5em;
+      line-height: 22px;
+      cursor: pointer;
+      -webkit-transition: 0.1s;
+      transition: 0.1s; }
+      html body header form.search #searchbutton:hover {
+        background-color: #0fcfbf;
+        color: #293952; }
+  html body main.homeGrid {
+    margin: auto;
+    max-width: 1100px; }
   html body main.pasOgKoerekort {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas3.jpg) no-repeat right;
-    background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas3.jpg) no-repeat right;
-    background-size: auto 100%; }
+    padding: 1em 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas2.jpg) no-repeat center;
+    background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
+    background-size: 100% auto; }
   html body main h1 {
     font-family: "Roboto Slab", serif;
-    margin: 0.2em 8px 0.5em; }
+    margin: 0.2em 8px 0.5em;
+    color: white; }
   html body main p {
     font-family: "Roboto", sans-serif;
-    margin-left: 8px; }
+    margin-left: 8px;
+    color: white; }
     html body main p.breadcrumb {
       margin-bottom: 0.2em; }
       html body main p.breadcrumb a {
-        color: #000;
+        color: white;
         text-decoration: none; }
         html body main p.breadcrumb a:hover {
           color: #0fcfbf; }
@@ -167,6 +171,11 @@ html body {
           vertical-align: middle; }
 
 @media only screen and (min-width: 600px) {
+  html body main.pasOgKoerekort {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas3.jpg) no-repeat right;
+    background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas3.jpg) no-repeat right;
+    background-size: auto 100%; }
+
   html body main nav a.catlink {
     margin: 1vw; }
 
@@ -179,7 +188,7 @@ html body {
 @media only screen and (min-width: 950px) {
   html body header {
     height: 5em;
-    margin: auto auto 3.5em;
+    margin: auto auto 1.5em;
     max-width: 1200px; }
     html body header .name-and-menu {
       position: absolute;
