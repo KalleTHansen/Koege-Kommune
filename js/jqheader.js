@@ -52,8 +52,8 @@ var $window = $(window);
 
 function checkWidth() {
     var windowsize = $window.width();
-    if (windowsize >= 950) {
-        //if the window is greater than or equal to 950px wide then show menu.
+    if (windowsize >= 930) {
+        //if the window is greater than or equal to 930px wide then show menu.
         $( ".menu" ).show();//Menu;
         $( ".search" ).show();//Search;
 
@@ -61,7 +61,7 @@ function checkWidth() {
     }
 
     else {
-        //if the window is less than 950px wide then hide menu.
+        //if the window is less than 930px wide then hide menu.
         $( ".menu" ).hide();//Menu;
         $( "#cross" ).hide();//Luk menu knap
         $( "#hamburger" ).show();
@@ -69,7 +69,7 @@ function checkWidth() {
         $( "#searchicon" ).show();
         $( "#closesearch" ).hide();
 
-        $(".linkButton").css("margin", "auto 8px");//Toggle centrering af START knap
+        $(".linkButton").css("margin", "auto auto auto 97px");//Toggle centrering af START knap
     }
 }
 // Execute on load

@@ -123,7 +123,7 @@ html body {
         font-size: 2em; }
       html body main .bgColor a.linkButton {
         display: block;
-        margin: auto 8px;
+        margin: auto auto auto 97px;
         text-align: center;
         text-decoration: none;
         background-color: #293952;
@@ -277,7 +277,7 @@ html body {
 
   html body main nav a article.category h3 {
     font-size: 1.1em; } }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 930px) {
   html body header {
     height: 5em;
     margin: auto auto 1.5em;

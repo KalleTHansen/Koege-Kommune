@@ -138,7 +138,7 @@ html {
 
           &.linkButton {
             display: block;
-            margin: auto 8px;
+            margin: auto auto auto 97px; //Centrerer det nogenlunde under tekst på mobil
             text-align: center;
             text-decoration: none;
             background-color: $primaryColor;
@@ -348,7 +348,7 @@ html {
   }
 }//@media min-width 600px end
 
-@media only screen and (min-width: 950px)/* and (-webkit-max-device-pixel-ratio: 2)*/ {//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER! Pixel ratio er til telefoner (WIP).
+@media only screen and (min-width: 930px)/* and (-webkit-max-device-pixel-ratio: 2)*/ {//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER! Pixel ratio er til telefoner (WIP).
 
   html body {
     header {
@@ -479,7 +479,7 @@ html {
 
   }//Body end
 
-}//@media 950px end
+}//@media 930px end
 
 @media only screen and (min-width: 1100px) {
   html body main nav a.catlink {
