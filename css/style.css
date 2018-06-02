@@ -171,6 +171,31 @@ html body {
           transition: 0.2s;
           width: 55%;
           vertical-align: middle; }
+  html body footer {
+    background-color: #293952;
+    padding: 0.8% 0 5%; }
+    html body footer section {
+      margin-left: 8px;
+      max-width: 12em; }
+      html body footer section h2 {
+        font-family: "Roboto Slab", serif;
+        color: white; }
+      html body footer section a {
+        margin-bottom: 0.4em; }
+    html body footer div.social {
+      width: 8em;
+      position: absolute;
+      right: 0;
+      margin-top: -3.9em; }
+    html body footer a {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      display: block;
+      text-decoration: none; }
+      html body footer a img {
+        width: 43%;
+        float: left;
+        margin-right: 8px; }
 
 @media only screen and (min-width: 600px) {
   html body main.pasOgKoerekort {

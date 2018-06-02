@@ -11,7 +11,7 @@ $mainFont: 'Roboto', sans-serif;
 html {
 
   body {
-    margin: 0; //Fixer at navgrid går på én række
+    margin: 0; //Fixer at navgrid går på én række (sådan da). Lader elementer gå til kant (bg)
     header {
 
       .name-and-menu{
@@ -203,6 +203,44 @@ html {
         }//A end
       }//Nav end
     }//Main end
+
+    footer {
+      background-color: $primaryColor;
+      padding: 0.8% 0 5%;
+
+      section {
+        margin-left: 8px;
+        max-width: 12em;
+
+        h2 {
+          font-family: $headingFont;
+          color: $invTextColor;
+        }
+
+        a {
+          margin-bottom: 0.4em;
+        }
+      }
+      div.social {
+        width: 8em;
+        position: absolute;
+        right: 0;
+        margin-top: -3.9em;
+        }
+
+      a {
+        font-family: $mainFont;
+        color: $invTextColor;
+        display: block;
+        text-decoration: none;
+
+        img {
+          width: 43%;
+          float: left;
+          margin-right: 8px;
+        }
+      }
+    }//Footer end
   }//Body end
 }
 
