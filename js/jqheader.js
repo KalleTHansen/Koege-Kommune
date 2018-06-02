@@ -56,7 +56,10 @@ function checkWidth() {
         //if the window is greater than or equal to 950px wide then show menu.
         $( ".menu" ).show();//Menu;
         $( ".search" ).show();//Search;
+
+        $(".linkButton").css("margin", "auto");//Toggle centrering af START knap
     }
+
     else {
         //if the window is less than 950px wide then hide menu.
         $( ".menu" ).hide();//Menu;
@@ -65,10 +68,12 @@ function checkWidth() {
         $( ".search" ).hide();//Search bar;
         $( "#searchicon" ).show();
         $( "#closesearch" ).hide();
+
+        $(".linkButton").css("margin", "auto 8px");//Toggle centrering af START knap
     }
 }
 // Execute on load
 checkWidth();
 // Bind event listener
-$(window).resize(checkWidth);
+$(window).resize(checkWidth);//Tjek bredde hver gang vinduet ændres i størrelse
 });

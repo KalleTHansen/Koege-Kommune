@@ -123,7 +123,7 @@ html body {
         font-size: 2em; }
       html body main .bgColor a.linkButton {
         display: block;
-        margin: auto;
+        margin: auto 8px;
         text-align: center;
         text-decoration: none;
         background-color: #293952;
