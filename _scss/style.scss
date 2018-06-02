@@ -447,7 +447,44 @@ html {
       h1 {
         margin: 0.5em 8px;
       }
+
+      ol {
+        li {
+          &:before {
+            display: block;
+            position: absolute;
+            left: 17%;
+            font: 44px 'Roboto', sans-serif;
+            line-height: 60px;
+            width: 60px;
+            height: 60px;
+          }
+          #n2 {
+            left: 33%
+          }
+          #n3 {
+            left: 66%;
+          }
+        }
+      }
     }//main end
+
+
+  /*  counter-increment: numList;
+display: block;
+position: absolute;
+left: 17%;
+content: counter(numList);
+/* float: left; */
+/*font: 44px 'Roboto', sans-serif;
+text-align: center;
+color: #fff;
+line-height: 60px;
+width: 60px;
+height: 60px;
+background: #293952;
+margin-right: 1em;
+border-radius: 999px;*/
 
     footer {
       padding: 0.2em 0 3em;

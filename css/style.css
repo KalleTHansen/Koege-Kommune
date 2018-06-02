@@ -278,84 +278,112 @@ html body {
   html body main nav a article.category h3 {
     font-size: 1.1em; } }
 @media only screen and (min-width: 930px) {
-  html body header {
-    height: 5em;
-    margin: auto auto 1.5em;
-    max-width: 1200px; }
-    html body header .name-and-menu {
-      position: absolute;
-      height: auto;
-      width: 11%; }
-      html body header .name-and-menu a img {
-        display: block;
-        margin: 0 1em 0 0; }
-      html body header .name-and-menu a h2 {
-        word-spacing: 100vw;
-        margin-top: 1.5em;
-        width: 30%; }
-      html body header .name-and-menu .menuicons {
-        display: none; }
-    html body header .menu {
-      background: none;
+  html body {
+  /*  counter-increment: numList;
+display: block;
+position: absolute;
+left: 17%;
+content: counter(numList);
+/* float: left; */
+    /*font: 44px 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    background: #293952;
+    margin-right: 1em;
+    border-radius: 999px;*/ }
+    html body header {
+      height: 5em;
+      margin: auto auto 1.5em;
       max-width: 1200px; }
-      html body header .menu ul {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        margin-top: 2.5em;
-        border: none; }
-        html body header .menu ul li {
+      html body header .name-and-menu {
+        position: absolute;
+        height: auto;
+        width: 11%; }
+        html body header .name-and-menu a img {
+          display: block;
+          margin: 0 1em 0 0; }
+        html body header .name-and-menu a h2 {
+          word-spacing: 100vw;
+          margin-top: 1.5em;
+          width: 30%; }
+        html body header .name-and-menu .menuicons {
+          display: none; }
+      html body header .menu {
+        background: none;
+        max-width: 1200px; }
+        html body header .menu ul {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          margin-top: 2.5em;
           border: none; }
-          html body header .menu ul li:last-of-type {
-            display: none; }
-          html body header .menu ul li:hover {
-            border: none;
-            background: none; }
-          html body header .menu ul li a {
-            display: inline;
-            padding: 0 1em;
-            background: none;
-            font-size: 2em; }
-            html body header .menu ul li a:hover {
+          html body header .menu ul li {
+            border: none; }
+            html body header .menu ul li:last-of-type {
+              display: none; }
+            html body header .menu ul li:hover {
+              border: none;
+              background: none; }
+            html body header .menu ul li a {
               display: inline;
+              padding: 0 1em;
               background: none;
-              padding: 0 1em; }
-    html body header a#contact {
-      text-align: right;
-      display: block;
-      margin-bottom: 0.5em;
-      -webkit-transition: 0.1s;
-      transition: 0.1s; }
-      html body header a#contact:hover {
-        color: #0fcfbf; }
-    html body header form.search {
-      display: inline;
-      float: right;
-      margin: -2.6em 8px 0; }
-      html body header form.search #searchfield {
-        width: 12em; }
-  html body main .mainpage {
-    margin: auto;
-    max-width: 1100px; }
-  html body main h1 {
-    margin: 0.5em 8px; }
-  html body footer {
-    padding: 0.2em 0 3em; }
-    html body footer div.centerFooter {
-      max-width: 1200px;
-      margin: auto; }
-      html body footer div.centerFooter section {
-        width: 40em;
-        display: inline; }
-        html body footer div.centerFooter section h2 {
-          margin-left: 8px; }
-        html body footer div.centerFooter section a {
-          display: inline;
-          margin: 0 2em 0 8px; }
-      html body footer div.centerFooter div.social {
-        position: initial;
+              font-size: 2em; }
+              html body header .menu ul li a:hover {
+                display: inline;
+                background: none;
+                padding: 0 1em; }
+      html body header a#contact {
+        text-align: right;
+        display: block;
+        margin-bottom: 0.5em;
+        -webkit-transition: 0.1s;
+        transition: 0.1s; }
+        html body header a#contact:hover {
+          color: #0fcfbf; }
+      html body header form.search {
+        display: inline;
         float: right;
-        margin-top: -2.5em; } }
+        margin: -2.6em 8px 0; }
+        html body header form.search #searchfield {
+          width: 12em; }
+    html body main .mainpage {
+      margin: auto;
+      max-width: 1100px; }
+    html body main h1 {
+      margin: 0.5em 8px; }
+    html body main ol li:before {
+      display: block;
+      position: absolute;
+      left: 17%;
+      font: 44px 'Roboto', sans-serif;
+      line-height: 60px;
+      width: 60px;
+      height: 60px; }
+    html body main ol li #n2 {
+      left: 33%; }
+    html body main ol li #n3 {
+      left: 66%; }
+    html body footer {
+      padding: 0.2em 0 3em; }
+      html body footer div.centerFooter {
+        max-width: 1200px;
+        margin: auto; }
+        html body footer div.centerFooter section {
+          width: 40em;
+          display: inline; }
+          html body footer div.centerFooter section h2 {
+            margin-left: 8px; }
+          html body footer div.centerFooter section a {
+            display: inline;
+            margin: 0 2em 0 8px; }
+        html body footer div.centerFooter div.social {
+          position: initial;
+          float: right;
+          margin-top: -2.5em; } }
 @media only screen and (min-width: 1100px) {
   html body main nav a.catlink {
     margin: 0.6em; }
