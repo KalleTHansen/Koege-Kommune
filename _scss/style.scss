@@ -105,6 +105,11 @@ html {
   }//header end
 
     main {
+      min-height: 70vh; //Udvider main, så footer står i bunden
+      min-height: -webkit-calc(100vh - 264px);
+      min-height: -moz-calc(100vh - 264px);
+      min-height: calc(100vh - 264px);
+
       &.homeMain{
         margin: auto;
         max-width: 1100px;
