@@ -51,13 +51,13 @@ $( "#closesearch" ).click(function() { //Klikke på luk søgefunktion
 var $window = $(window);
 
 function checkWidth() {
-    var windowsize = $window.width();
+    var windowsize = $window.width(); //https://stackoverflow.com/questions/8339377/how-to-get-screen-width-without-minus-scrollbar
     if (windowsize >= 930) {
         //if the window is greater than or equal to 930px wide then show menu.
         $( ".menu" ).show();//Menu;
         $( ".search" ).show();//Search;
 
-        $(".linkButton").css("margin", "auto");//Toggle centrering af START knap
+        $(".linkButton").css("margin", "0.5em auto 3em");//Centrering af START knap
     }
 
     else {
@@ -69,7 +69,7 @@ function checkWidth() {
         $( "#searchicon" ).show();
         $( "#closesearch" ).hide();
 
-        $(".linkButton").css("margin", "auto auto auto 97px");//Toggle centrering af START knap
+        $(".linkButton").css("margin", "auto auto auto 97px");//Venstrejusteret + margen til START knap
     }
 }
 // Execute on load

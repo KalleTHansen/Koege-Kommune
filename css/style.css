@@ -114,14 +114,18 @@ html body {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas2.jpg) no-repeat center;
       background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
       background-size: 100% auto; }
-    html body main .bgColor {
+    html body main.bgColor {
       padding: 1em 0;
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7)));
       background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
       background-size: 100% auto; }
-      html body main .bgColor h1 {
+      html body main.bgColor h1 {
         font-size: 2em; }
-      html body main .bgColor a.linkButton {
+      html body main.bgColor h2 {
+        color: white;
+        font-family: "Roboto Slab", serif;
+        margin-left: 8px; }
+      html body main.bgColor a.linkButton {
         display: block;
         margin: auto auto auto 97px;
         text-align: center;
@@ -135,7 +139,7 @@ html body {
         -webkit-transition: 0.1s;
         transition: 0.1s;
         max-width: 5em; }
-      html body main .bgColor a:hover {
+      html body main.bgColor a:hover {
         background-color: #0fcfbf;
         color: #000;
         cursor: pointer; }
@@ -339,29 +343,31 @@ html body {
     max-width: 1100px; }
   html body main h1 {
     margin: 0.5em 8px; }
-  html body main ol li {
-    display: inline-block;
-    position: relative;
-    margin: 4em 8px 2em; }
-    html body main ol li:before {
-      display: block;
-      position: absolute;
-      left: 25%;
-      top: -302%;
-      font: 44px 'Roboto', sans-serif;
-      line-height: 60px;
-      width: 60px;
-      height: 60px; }
-    html body main ol li#n1 {
-      left: 16%; }
-      html body main ol li#n1:before {
-        left: 30%; }
-    html body main ol li#n2 {
-      left: 28%; }
-    html body main ol li#n3 {
-      left: 40%; }
-      html body main ol li#n3:before {
-        left: 35%; }
+  html body main ol {
+    margin: 4em 0 0 0; }
+    html body main ol li {
+      display: inline-block;
+      position: relative;
+      margin: 4em 8px 2em; }
+      html body main ol li:before {
+        display: block;
+        position: absolute;
+        left: 25%;
+        top: -302%;
+        font: 44px 'Roboto', sans-serif;
+        line-height: 60px;
+        width: 60px;
+        height: 60px; }
+      html body main ol li#n1 {
+        left: 16%; }
+        html body main ol li#n1:before {
+          left: 30%; }
+      html body main ol li#n2 {
+        left: 28%; }
+      html body main ol li#n3 {
+        left: 40%; }
+        html body main ol li#n3:before {
+          left: 35%; }
   html body footer {
     padding: 0.2em 0 3em; }
     html body footer div.centerFooter {

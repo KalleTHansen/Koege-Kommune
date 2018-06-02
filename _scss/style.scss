@@ -126,13 +126,18 @@ html {
         background-size: 100% auto;
       }
 
-      .bgColor {
+      &.bgColor {
         padding: 1em 0;
         background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
         background-size: 100% auto;
 
         h1 {
           font-size: 2em;
+        }
+        h2 {
+          color: $invTextColor;
+          font-family: $headingFont;
+          margin-left: 8px;
         }
         a {//Alle links i main
 
@@ -348,7 +353,7 @@ html {
   }
 }//@media min-width 600px end
 
-@media only screen and (min-width: 930px)/* and (-webkit-max-device-pixel-ratio: 2)*/ {//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER! Pixel ratio er til telefoner (WIP).
+@media only screen and (min-width: 930px){//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER! Pixel ratio er til telefoner (WIP).
 
   html body {
     header {
@@ -449,6 +454,7 @@ html {
       }
 
       ol {//Ordered list (123 steps på indholdsside)
+        margin: 4em 0 0 0; //Rykker 123 ned
         li {
           display: inline-block; //Desktop: Punkter på række
           position: relative;//Så man kan flytte som man vil
