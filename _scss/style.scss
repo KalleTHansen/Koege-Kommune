@@ -15,33 +15,33 @@ html {
     header {
 
       .name-and-menu{
-      margin: 15px 8px 10px; //8px = Standard body margin
-      height: 3em;
-      display: flex;
-      align-items: center;
+        margin: 15px 8px 10px; //8px = Standard body margin
+        height: 3em;
+        display: flex;
+        align-items: center;
       }
 
 
-        a {
-          text-decoration: none;
+      a {
+        text-decoration: none;
 
-          &#contact {//Kontakt og åbningstider link i header
-            color: $textColor;
-            display: none;
-            font-family: $mainFont;
-          }
-
-          img {
-            margin: 1em 1em 0 0;
-            height: 4em;
-            display: none;
-          }
-          h2 { //Koege kommune navn
-            display: inline;
-            color: $primaryColor;
-            font-family: $headingFont;
-          }
+        &#contact {//Kontakt og åbningstider link i header
+          color: $textColor;
+          display: none;
+          font-family: $mainFont;
         }
+
+        img {
+          margin: 1em 1em 0 0;
+          height: 4em;
+          display: none;
+        }
+        h2 { //Koege kommune navn
+          display: inline;
+          color: $primaryColor;
+          font-family: $headingFont;
+        }
+      }
 
 
       .menuicons {
@@ -51,58 +51,58 @@ html {
 
         img {//menu og søg
           width: 2em;
-          }
+        }
 
-          #hamburger, #cross {
-            margin-right: 1em;
-          }
+        #hamburger, #cross {
+          margin-right: 1em;
+        }
 
       }
 
 
-    .menu {z-index:1000000; font-weight: normal; font-size:0.8em; width:100%; background:#f1f1f1;  /*position:absolute; */text-align:center; font-size:12px;}
-    .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-    .menu li {display: block;  border-bottom:#dddddd 1px solid;}
-    .menu li:hover{/*display: block;*/ background:#eaeaea; border-bottom:#dddddd 1px solid;}
-    .menu ul li a {font-family: $headingFont; text-decoration:none; padding:15px 0 15px 0; margin: 0px; color:$primaryColor; display: block; width: 100%; height: 100%;}
-    .menu ul li a:hover {  color: #666; text-decoration:none;}
-    .menu a{text-decoration:none; color:#666;}
-    .menu a:hover{text-decoration:none; color: $accentColor;}
+      .menu {z-index:1000000; font-weight: normal; font-size:0.8em; width:100%; background:#f1f1f1;  /*position:absolute; */text-align:center; font-size:12px;}
+      .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+      .menu li {display: block;  border-bottom:#dddddd 1px solid;}
+      .menu li:hover{/*display: block;*/ background:#eaeaea; border-bottom:#dddddd 1px solid;}
+      .menu ul li a {font-family: $headingFont; text-decoration:none; padding:15px 0 15px 0; margin: 0px; color:$primaryColor; display: block; width: 100%; height: 100%;}
+      .menu ul li a:hover {  color: #666; text-decoration:none;}
+      .menu a{text-decoration:none; color:#666;}
+      .menu a:hover{text-decoration:none; color: $accentColor;}
 
-    #currentPage {color: $accentColor;}
+      #currentPage {color: $accentColor;}
 
-    form.search {
-      text-align: center;
-      margin-bottom: 1em;
+      form.search {
+        text-align: center;
+        margin-bottom: 1em;
 
-      #searchfield {
-        //width: 70vw; //Kan ikke overskrives i @media???
-        width: 18.9em;
-        border: 2px solid $primaryColor;
-        border-radius: 5px;
-        padding: 0.38em 0.3em 0.2em;
-        margin-right: -0.9em;
-      }
+        #searchfield {
+          //width: 70vw; //Kan ikke overskrives i @media???
+          width: 18.9em;
+          border: 2px solid $primaryColor;
+          border-radius: 5px;
+          padding: 0.38em 0.3em 0.2em;
+          margin-right: -0.9em;
+        }
 
-      #searchbutton {
-        -webkit-appearance: none;
-        background-color: $primaryColor;
-        border: $primaryColor;
-        border-radius: 5px;
-        color: white;
-        padding: 0.001em 0.5em 0.2em;
-        font-size: 1.5em;
-        line-height: 22px;
-        cursor: pointer;
-        transition: 0.1s;
+        #searchbutton {
+          -webkit-appearance: none;
+          background-color: $primaryColor;
+          border: $primaryColor;
+          border-radius: 5px;
+          color: white;
+          padding: 0.001em 0.5em 0.2em;
+          font-size: 1.5em;
+          line-height: 22px;
+          cursor: pointer;
+          transition: 0.1s;
 
-        &:hover {
-          background-color: $accentColor;
-          color: $primaryColor;
+          &:hover {
+            background-color: $accentColor;
+            color: $primaryColor;
+          }
         }
       }
-    }
-  }//header end
+    }//header end
 
     main {
       min-height: 70vh; //Udvider main, så footer står i bunden
@@ -119,6 +119,16 @@ html {
         padding: 1em 0;
         background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
         background-size: 100% auto;
+      }
+
+      .bgColor {
+        padding: 1em 0;
+        background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
+        background-size: 100% auto;
+
+        h1 {
+          font-size: 2em;
+        }
       }
 
       h1 {
@@ -149,7 +159,7 @@ html {
         &#navgrid {
           display: flex;//Til at sætte kasser på linje + wrap
           flex-wrap: wrap;
-        //  justify-content: center; //Centrerer kategorier
+          //  justify-content: center; //Centrerer kategorier
         }
 
         a {
@@ -172,8 +182,8 @@ html {
               &:hover {
                 background-color: white; //Baggrundsfarve på .category kassen
 
-              .icon { //.icon = descendant of .category. Nested in previous hover (same as &:hover .icon)
-                transform: scale(1.3,1.3);//Forstør ikon ved hover
+                .icon { //.icon = descendant of .category. Nested in previous hover (same as &:hover .icon)
+                  transform: scale(1.3,1.3);//Forstør ikon ved hover
                 }
               }//End .category hover
 
@@ -201,7 +211,7 @@ html {
                   transition: 0.2s; //Animeret overgang ved hover
                   width: 55%;
                   vertical-align: middle;
-                  }//End .icon
+                }//End .icon
               }
             }//End .category
           }//article end
@@ -231,7 +241,7 @@ html {
         position: absolute;
         right: 0;
         margin-top: -3.9em;
-        }
+      }
 
       a {
         font-family: $mainFont;
@@ -252,7 +262,7 @@ html {
 
 @media only screen and (min-width: 600px) {
 
-  html body main.pasOgKoerekort {
+  html body main.pasOgKoerekort { //Skalering ændres
     background: linear-gradient(rgba(7,92,209,0.7), rgba(7,92,209,0.7)), url(../img/pas3.jpg) no-repeat right;
     background-size: auto 100%;
   }
@@ -274,7 +284,7 @@ html {
   html body main nav a article.category h3 {
     font-size: 1.1em;
   }
-}
+}//@media min-width 600px end
 
 @media only screen and (min-width: 950px)/* and (-webkit-max-device-pixel-ratio: 2)*/ {//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER! Pixel ratio er til telefoner (WIP).
 
@@ -285,128 +295,128 @@ html {
       max-width: 1200px;
 
       .name-and-menu {
-      position: absolute; //Rykker nav og søg op på linje
-      height: auto;
-      width: 11%; //Så den ikke overlapper nav links
+        position: absolute; //Rykker nav og søg op på linje
+        height: auto;
+        width: 11%; //Så den ikke overlapper nav links
 
-      a {
+        a {
 
-        img {
-        display: block;
-        margin: 0 1em 0 0;
+          img {
+            display: block;
+            margin: 0 1em 0 0;
+          }
+          h2 {//Køge kommune titel
+            word-spacing: 100vw;//Force line break (Køge kommune)
+            margin-top: 1.5em;
+            width: 30%;
+          }
         }
-        h2 {//Køge kommune titel
-          word-spacing: 100vw;//Force line break (Køge kommune)
-          margin-top: 1.5em;
-          width: 30%;
+
+        .menuicons {//Både burger og søg
+          display: none;
         }
       }
-
-    .menuicons {//Både burger og søg
-      display: none;
-    }
-  }
-    .menu {//Overmenu
-      background: none;
-      max-width: 1200px;
+      .menu {//Overmenu
+        background: none;
+        max-width: 1200px;
 
 
-      ul {
-        display: inline-flex; //Så listeelementerne står på samme linje
-        margin-top: 2.5em;
-        border: none;
-
-
-        li {
+        ul {
+          display: inline-flex; //Så listeelementerne står på samme linje
+          margin-top: 2.5em;
           border: none;
-          &:last-of-type {//Det sidste punkt på listen: Kontakt og åbningstider
-            display: none;
-          }
-          &:hover {
+
+
+          li {
             border: none;
-            background: none;
-          }
-
-           a {//Menupunkter til borger, erhverv osv.
-            display: inline;
-            padding: 0 1em;
-            background: none;
-            font-size: 2em;
-
-            &:hover {
-              display: inline;
-              background: none;
-              padding: 0 1em;
+            &:last-of-type {//Det sidste punkt på listen: Kontakt og åbningstider
+              display: none;
             }
-          }
-        }//li end
-      }//ul end
-    }//.menu end
+            &:hover {
+              border: none;
+              background: none;
+            }
 
-    a#contact {
-      text-align: right;
-      display: block;
-      margin-bottom: 0.5em;
-      transition: 0.1s;
+            a {//Menupunkter til borger, erhverv osv.
+              display: inline;
+              padding: 0 1em;
+              background: none;
+              font-size: 2em;
 
-      &:hover {
-        color: $accentColor;
+              &:hover {
+                display: inline;
+                background: none;
+                padding: 0 1em;
+              }
+            }
+          }//li end
+        }//ul end
+      }//.menu end
+
+      a#contact {
+        text-align: right;
+        display: block;
+        margin-bottom: 0.5em;
+        transition: 0.1s;
+
+        &:hover {
+          color: $accentColor;
+        }
       }
-    }
 
-    form.search {
+      form.search {
         display: inline;
         float: right;
         margin: -2.6em 8px 0;
 
-    #searchfield {
-            width: 12em;
+        #searchfield {
+          width: 12em;
+        }
+      }
+    }//Header end
+
+    main {
+
+      .mainpage { //Tillader fuldskærms bg img på main, centrerer.
+        margin: auto;
+        max-width: 1100px;
+      }
+
+
+      h1 {
+        margin: 0.5em 8px;
+      }
+    }//main end
+
+    footer {
+      padding: 0.2em 0 3em;
+
+      div.centerFooter{
+        max-width: 1200px;
+        margin:auto;
+
+        section {
+          width: 40em;
+          display: inline;
+
+          h2 {
+            margin-left: 8px;
+          }
+
+          a {
+            display: inline;
+            margin: 0 2em 0 8px;
           }
         }
-  }//Header end
-
-  main {
-
-    .mainpage { //Tillader fuldskærms bg img på main
-      margin: auto;
-      max-width: 1100px;
-    }
-
-
-    h1 {
-    margin: 0.5em 8px;
-    }
-  }//main end
-
-  footer {
-    padding: 0.2em 0 3em;
-
-    div.centerFooter{
-      max-width: 1200px;
-      margin:auto;
-
-      section {
-        width: 40em;
-        display: inline;
-
-        h2 {
-          margin-left: 8px;
+        div.social {
+          position: initial;
+          float: right;
+          margin-top: -2.5em;
         }
+      }//centerFooter end
+    }//Footer end
 
-        a {
-          display: inline;
-          margin: 0 2em 0 8px;
-        }
-      }
-      div.social {
-        position: initial;
-        float: right;
-        margin-top: -2.5em;
-      }
-    }//centerFooter end
-  }//Footer end
-
-}//Body end
+  }//Body end
 
 }//@media 950px end
 
