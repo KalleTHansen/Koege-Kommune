@@ -290,8 +290,7 @@ html body {
           margin-left: 8px; }
         html body footer div.centerFooter section a {
           display: inline;
-          padding-right: 2em;
-          margin-left: 8px; }
+          margin: 0 2em 0 8px; }
       html body footer div.centerFooter div.social {
         position: initial;
         float: right;
