@@ -1,9 +1,12 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 html body {
   margin: 0; }
+  html body .centerIt {
+    text-align: center; }
   html body header .name-and-menu {
     margin: 15px 8px 10px;
     height: 3em;
@@ -118,21 +121,69 @@ html body {
       background-size: 100% auto; }
       html body main .bgColor h1 {
         font-size: 2em; }
+      html body main .bgColor a.linkButton {
+        display: block;
+        margin: auto;
+        text-align: center;
+        text-decoration: none;
+        background-color: #293952;
+        color: white;
+        border-radius: 100px;
+        border: none;
+        font: 1.5em 'Roboto', sans-serif;
+        padding: 0.3em 1em;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+        max-width: 5em; }
+      html body main .bgColor a:hover {
+        background-color: #0fcfbf;
+        color: #000;
+        cursor: pointer; }
     html body main h1 {
       font-family: "Roboto Slab", serif;
       margin: 0.2em 8px 0.5em;
       color: white; }
     html body main p {
       font-family: "Roboto", sans-serif;
-      margin-left: 8px;
+      margin: 1em 8px;
       color: white; }
       html body main p.breadcrumb {
-        margin-bottom: 0.2em; }
+        margin-bottom: 0.2em;
+        font-size: 0.8em; }
         html body main p.breadcrumb a {
           color: white;
           text-decoration: none; }
           html body main p.breadcrumb a:hover {
             color: #0fcfbf; }
+    html body main ol {
+      display: block;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      counter-reset: numList;
+      /*Sørger for der tælles op*/ }
+    html body main ol li {
+      margin: 1em 8px;
+      font: 1.4em 'Roboto',sans-serif;
+      color: white;
+      position: relative; }
+    html body main ol li:before {
+      /*Cirklen*/
+      counter-increment: numList;
+      /*Sørger for der tælles op*/
+      content: counter(numList);
+      float: left;
+      font: 18px 'Roboto', sans-serif;
+      /*Teksten i cirklen*/
+      text-align: center;
+      /*Midten af cirklen*/
+      color: #fff;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      background: #293952;
+      margin-right: 1em;
+      border-radius: 999px; }
     html body main nav#navgrid {
       display: -webkit-box;
       display: -ms-flexbox;
