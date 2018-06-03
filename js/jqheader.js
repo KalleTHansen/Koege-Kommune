@@ -69,7 +69,7 @@ function checkWidth() {
         $( "#searchicon" ).show();
         $( "#closesearch" ).hide();
 
-        $(".linkButton").css("margin", "auto auto auto 97px");//Venstrejusteret + margen til START knap
+        $(".linkButton").css("margin", "auto auto 2em 97px");//Venstrejusteret + margen til START knap
     }
 }
 // Execute on load

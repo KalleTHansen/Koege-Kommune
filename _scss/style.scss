@@ -143,7 +143,7 @@ html {
 
           &.linkButton {
             display: block;
-            margin: auto auto auto 97px; //Centrerer det nogenlunde under tekst på mobil
+            margin: auto auto 2em 97px; //Centrerer det nogenlunde under tekst på mobil
             text-align: center;
             text-decoration: none;
             background-color: $primaryColor;
@@ -221,6 +221,12 @@ html {
 
         -moz-border-radius: 999px;
         border-radius: 999px
+      }
+
+      #accordion {
+        p {
+          color: $textColor;
+        }
       }
 
       nav {

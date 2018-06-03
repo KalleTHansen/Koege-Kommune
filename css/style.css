@@ -127,7 +127,7 @@ html body {
         margin-left: 8px; }
       html body main.bgColor a.linkButton {
         display: block;
-        margin: auto auto auto 97px;
+        margin: auto auto 2em 97px;
         text-align: center;
         text-decoration: none;
         background-color: #293952;
@@ -189,6 +189,8 @@ html body {
       background: #293952;
       margin-right: 1em;
       border-radius: 999px; }
+    html body main #accordion p {
+      color: #000; }
     html body main nav#navgrid {
       display: -webkit-box;
       display: -ms-flexbox;
