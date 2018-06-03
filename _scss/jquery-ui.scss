@@ -99,7 +99,7 @@
 	position: relative;
 	margin: 2px 0 0 0;
 	padding: .5em .5em .5em .7em;
-	font-size: 100%;
+	font-size: 100%; outline: none; //Så der ikke kommer kant rundt om den valgte sektion
 }
 .ui-accordion .ui-accordion-content {
 	padding: 1em 2.2em;
@@ -206,7 +206,7 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: 1px solid $accentColor;
+	border: 1px solid $primaryColor;
 	background: $primaryColor;
 	font-weight: normal;
 	color: #ffffff;
@@ -332,9 +332,9 @@ a.ui-button:active,
 .ui-icon-caret-2-e-w { background-position: -144px 0; }
 .ui-icon-triangle-1-n { background-position: 0 -16px; }
 .ui-icon-triangle-1-ne { background-position: -16px -16px; }
-.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; margin-right: 0.3em}
 .ui-icon-triangle-1-se { background-position: -48px -16px; }
-.ui-icon-triangle-1-s { background-position: -65px -16px; }
+.ui-icon-triangle-1-s { background-position: -65px -16px; margin-right: 0.3em}
 .ui-icon-triangle-1-sw { background-position: -80px -16px; }
 .ui-icon-triangle-1-w { background-position: -96px -16px; }
 .ui-icon-triangle-1-nw { background-position: -112px -16px; }

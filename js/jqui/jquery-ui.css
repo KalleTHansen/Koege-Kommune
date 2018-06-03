@@ -88,7 +88,8 @@
   position: relative;
   margin: 2px 0 0 0;
   padding: .5em .5em .5em .7em;
-  font-size: 100%; }
+  font-size: 100%;
+  outline: none; }
 
 .ui-accordion .ui-accordion-content {
   padding: 1em 2.2em;
@@ -190,7 +191,7 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-  border: 1px solid #0fcfbf;
+  border: 1px solid #293952;
   background: #293952;
   font-weight: normal;
   color: #ffffff; }
@@ -342,13 +343,15 @@ a.ui-button:active,
   background-position: -16px -16px; }
 
 .ui-icon-triangle-1-e {
-  background-position: -32px -16px; }
+  background-position: -32px -16px;
+  margin-right: 0.3em; }
 
 .ui-icon-triangle-1-se {
   background-position: -48px -16px; }
 
 .ui-icon-triangle-1-s {
-  background-position: -65px -16px; }
+  background-position: -65px -16px;
+  margin-right: 0.3em; }
 
 .ui-icon-triangle-1-sw {
   background-position: -80px -16px; }
