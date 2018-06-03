@@ -509,14 +509,16 @@ html {
         }//li end
       }//ol end
 
+      .accordion {
+        overflow: auto; //Lader section 2 floate til højre, og stadig skubbe til indhold under denne.
 
-      .accordion
-        h3:nth-of-type(-n+5) {
-          background-color: red;
-        }
-        .accordion {
-        h3, div {
-          width: 48%;
+        section {
+          width: 48.5%;//Bredden af hver af de to halvdele af spørgsmålene
+          display: inline-grid;//Så de står ved siden af hinanden og udvider nedad i modsætning til inline-block
+
+          &:nth-of-type(2) {
+            float: right; //Højrejusterer den sidste halvdel af spørgsmålene
+          }
         }
       }
 
