@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  $("#accordion").accordion({
+  $(".accordion").accordion({
     header: "h3",//Angiver hvilket element, der skal tildeles styling som fane
     collapsible: true,//Så alle sektioner kan være lukkede samtidigt
     active: false,//Default skal alle faner være lukket.
