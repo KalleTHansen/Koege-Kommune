@@ -385,6 +385,11 @@ html body {
         left: 40%; }
         html body main ol li#n3:before {
           left: 35%; }
+  html body main .accordion
+  h3:nth-of-type(-n+5) {
+    background-color: red; }
+  html body main .accordion h3, html body main .accordion div {
+    width: 48%; }
   html body footer {
     padding: 0.2em 0 3em; }
     html body footer div.centerFooter {

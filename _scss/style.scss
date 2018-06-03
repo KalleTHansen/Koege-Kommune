@@ -214,6 +214,7 @@ html {
       }
 
       .accordion {
+
         h3 {
           -webkit-user-select: none; /* Safari */  //Så teksten ikke kan highlightes
           -moz-user-select: none; /* Firefox */
@@ -507,6 +508,18 @@ html {
           }
         }//li end
       }//ol end
+
+
+      .accordion
+        h3:nth-of-type(-n+5) {
+          background-color: red;
+        }
+        .accordion {
+        h3, div {
+          width: 48%;
+        }
+      }
+
     }//main end
 
 
