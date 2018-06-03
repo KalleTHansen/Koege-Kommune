@@ -190,7 +190,12 @@ html body {
       margin-right: 1em;
       border-radius: 999px; }
     html body main #accordion p {
-      color: #000; }
+      color: #000;
+      margin-left: 0; }
+    html body main table tr th {
+      text-align: left; }
+    html body main table tr td:not(:last-of-type) {
+      padding-right: 2em; }
     html body main nav#navgrid {
       display: -webkit-box;
       display: -ms-flexbox;
