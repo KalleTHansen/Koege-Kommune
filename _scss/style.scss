@@ -1,10 +1,4 @@
-$primaryColor: #293952;
-$backgroundColor: #eee;
-$accentColor: #0fcfbf;
-$textColor: #000;
-$invTextColor: white;
-$headingFont: 'Roboto Slab', serif;
-$mainFont: 'Roboto', sans-serif;
+@import "variables";
 
 * {box-sizing: border-box;}
 
