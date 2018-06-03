@@ -109,11 +109,6 @@ html {
       min-height: -moz-calc(100vh - 264px);
       min-height: calc(100vh - 264px);//Px størrelse ændres hvis højde på header og footer ændres
 
-      &.homeMain{
-        margin: auto;
-        max-width: 1100px;
-      }
-
       &.pasOgKoerekort{
         padding: 1em 0;
         background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
@@ -159,9 +154,55 @@ html {
         }
       }
 
+      nav {
+        &.shortcuts {
+          margin:auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+
+          div {
+            flex-grow: 1;
+            min-width: 150px;
+            max-width: 47%;
+            border-radius: 5px;
+            background-color: $primaryColor;
+            text-align: center;
+            transition: 0.1s;
+            margin: 0.3em;
+
+            &:hover {
+              background-color: $accentColor;
+            }
+
+            a {
+              font: 1.3em 'Roboto', sans-serif;
+              color: $invTextColor;
+              transition: 0.1s;
+              display: inline-block;
+              padding: 0.5em;
+              margin: 0;
+              height: 100%;//Fylder hele div'en ud
+              width: 100%;
+              border-radius: 5px;//Så den matcher div'ens radius ved hover
+
+              &:hover {
+                background-color: $accentColor;
+                color: $primaryColor;
+              }
+            }
+          }
+        }
+      }
+
       h1 {//Alle H1 i main
         font-family: $headingFont;
         margin: 0.2em 8px 0.5em;
+        color: $invTextColor;
+      }
+
+      h2 {
+        font-family: $headingFont;
         color: $invTextColor;
       }
 
@@ -243,6 +284,10 @@ html {
           display: flex;//Til at sætte kasser på linje + wrap
           flex-wrap: wrap;
           //  justify-content: center; //Centrerer kategorier
+
+          a:hover {
+            background: none; //Lappeløsning
+          }
         }
 
         a {
@@ -366,6 +411,14 @@ html {
 
   html body main nav a article.category h3 {
     font-size: 1.1em;
+  }
+
+  html body main nav.shortcuts div {
+    min-width: 30%;
+    max-width: 31.7%;
+    a {
+      padding: 1.3em;
+    }
   }
 }//@media min-width 600px end
 
@@ -580,4 +633,11 @@ html {
   html body main nav a article.top3 {
     width: 21.71em;
   }
-}
+
+  html body main nav.shortcuts div {
+    border-radius: 10px;
+    a {
+      border-radius: 10px;
+    }
+  }
+}//@media min-width 1100px end

@@ -106,9 +106,6 @@ html body {
   html body main {
     min-height: 70vh;
     min-height: calc(100vh - 264px); }
-    html body main.homeMain {
-      margin: auto;
-      max-width: 1100px; }
     html body main.pasOgKoerekort {
       padding: 1em 0;
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas2.jpg) no-repeat center;
@@ -143,9 +140,50 @@ html body {
         background-color: #0fcfbf;
         color: #000;
         cursor: pointer; }
+    html body main nav.shortcuts {
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      html body main nav.shortcuts div {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        min-width: 150px;
+        max-width: 47%;
+        border-radius: 5px;
+        background-color: #293952;
+        text-align: center;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+        margin: 0.3em; }
+        html body main nav.shortcuts div:hover {
+          background-color: #0fcfbf; }
+        html body main nav.shortcuts div a {
+          font: 1.3em 'Roboto', sans-serif;
+          color: white;
+          -webkit-transition: 0.1s;
+          transition: 0.1s;
+          display: inline-block;
+          padding: 0.5em;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 5px; }
+          html body main nav.shortcuts div a:hover {
+            background-color: #0fcfbf;
+            color: #293952; }
     html body main h1 {
       font-family: "Roboto Slab", serif;
       margin: 0.2em 8px 0.5em;
+      color: white; }
+    html body main h2 {
+      font-family: "Roboto Slab", serif;
       color: white; }
     html body main p {
       font-family: "Roboto", sans-serif;
@@ -211,6 +249,8 @@ html body {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+      html body main nav#navgrid a:hover {
+        background: none; }
     html body main nav a {
       margin: 2vw;
       color: #000;
@@ -297,7 +337,13 @@ html body {
     padding: 2vw; }
 
   html body main nav a article.category h3 {
-    font-size: 1.1em; } }
+    font-size: 1.1em; }
+
+  html body main nav.shortcuts div {
+    min-width: 30%;
+    max-width: 31.7%; }
+    html body main nav.shortcuts div a {
+      padding: 1.3em; } }
 @media only screen and (min-width: 930px) {
   html body header {
     height: 5em;
@@ -423,4 +469,9 @@ html body {
     border-radius: 10px; }
 
   html body main nav a article.top3 {
-    width: 21.71em; } }
+    width: 21.71em; }
+
+  html body main nav.shortcuts div {
+    border-radius: 10px; }
+    html body main nav.shortcuts div a {
+      border-radius: 10px; } }
