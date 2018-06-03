@@ -90,7 +90,7 @@ html {
         }
 
         #searchbutton {
-          -webkit-appearance: none;
+          -webkit-appearance: none;//Fjerner ekstra styling på iOS
           background-color: $primaryColor;
           border: $primaryColor;
           border-radius: 5px;
@@ -185,6 +185,7 @@ html {
 
             &:hover {
               color: $accentColor;
+              background: none;//Så tidligere css ikke gør teksten ulæselig
             }
           }
         }

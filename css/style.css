@@ -158,7 +158,8 @@ html body {
           color: white;
           text-decoration: none; }
           html body main p.breadcrumb a:hover {
-            color: #0fcfbf; }
+            color: #0fcfbf;
+            background: none; }
     html body main ol {
       display: block;
       padding: 0;
