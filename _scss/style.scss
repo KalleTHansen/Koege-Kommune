@@ -282,7 +282,7 @@ html {
           th {
             text-align: left;
           }
-          td:not(:last-of-type) { //Styler alle td i et row, undtagen den sidste
+          td { //Styler alle td i et row, undtagen den sidste
             padding-right: 2em;
           }
         }
@@ -431,7 +431,7 @@ html {
   }
 }//@media min-width 600px end
 
-@media only screen and (min-width: 930px){//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER! Pixel ratio er til telefoner (WIP).
+@media only screen and (min-width: 930px){//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER!
 
   html body {
     header {
@@ -521,6 +521,11 @@ html {
     }//Header end
 
     main {
+      &.bgColor {
+        a.linkButton {
+          margin: 0.5em auto 3em;
+        }
+      }
 
       .mainpage { //Tillader fuldskærms bg img på main, centrerer.
         margin: auto;
