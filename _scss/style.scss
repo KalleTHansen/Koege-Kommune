@@ -206,9 +206,13 @@ html {
         color: $invTextColor;
       }
 
+      h4 {
+        margin-bottom: 0.5em;
+      }
+
       p {//Alle P i main
         font-family: $mainFont;
-        margin: 1em 8px;
+        margin: 0.5em 8px 1em;
         color: $invTextColor;
 
         &.breadcrumb {
@@ -265,6 +269,11 @@ html {
         p {
           color: $textColor;
           margin-left: 0;
+        }
+      }
+      ul {
+        li {
+          color:black;
         }
       }
 
