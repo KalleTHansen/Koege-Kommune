@@ -48,7 +48,6 @@ $( document ).ready(function() {
   });
 
 
-
   var $window = $(window);
 
   function checkWidth() {
@@ -57,8 +56,6 @@ $( document ).ready(function() {
       //if the window is greater than or equal to 930px wide then show menu.
       $( ".menu" ).show();//Menu;
       $( ".search" ).show();//Search;
-
-      $(".linkButton").css("margin", "0.5em auto 3em");//Centrering af START knap
     }
 
     else {
@@ -69,8 +66,6 @@ $( document ).ready(function() {
       $( ".search" ).hide();//Search bar;
       $( "#searchicon" ).show();
       $( "#closesearch" ).hide();
-
-      $(".linkButton").css("margin", "auto auto 2em 97px");//Venstrejusteret + margen til START knap
     }
   }
   // Execute on load
