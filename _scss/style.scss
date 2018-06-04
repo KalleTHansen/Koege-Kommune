@@ -282,7 +282,7 @@ html {
           th {
             text-align: left;
           }
-          td:not(:last-of-type) { //Styler alle td i et row, undtagen den sidste
+          td { //Styler alle td i et row, undtagen den sidste
             padding-right: 2em;
           }
         }

@@ -245,7 +245,7 @@ html body {
       color: black; }
     html body main .accordion table tr th {
       text-align: left; }
-    html body main .accordion table tr td:not(:last-of-type) {
+    html body main .accordion table tr td {
       padding-right: 2em; }
     html body main nav#navgrid {
       display: -webkit-box;
