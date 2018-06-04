@@ -5,13 +5,13 @@ $( document ).ready(function() {
   $( ".search" ).hide();//Søgefelt
   $( "#closesearch" ).hide();//Luk søg knap
 
-  $( "#hamburger" ).click(function() {//Åben menu
+  $( "#hamburger" ).click(function() {//Klik på menu
     $( "#hamburger" ).hide();//Menuknap
-    $( "#cross" ).show();//Luk menu knap
+    $( "#cross" ).show();//Kryds til menu knap
 
     //Søgeikon er usynlig, søgekryds er synlig
     if ( $("#searchicon").css('display') == 'none' ){
-      $( ".search" ).hide();//Søgefelt
+      $( ".search" ).slideToggle( "fast", function(){});//Søgefelt
       $( "#searchicon" ).show();//Søgeikon
       $( "#closesearch" ).hide();//Kryds til søgeikon
     }
@@ -31,7 +31,7 @@ $( document ).ready(function() {
     $( "#closesearch" ).show();
 
     if ( $("#hamburger").css('display') == 'none' ){// Hamburger er usynlig, menukryds er synlig
-      $( ".menu" ).hide();
+      $( ".menu" ).slideToggle( "fast", function() {});
       $( "#hamburger" ).show();
       $( "#cross" ).hide();
     }
@@ -42,7 +42,7 @@ $( document ).ready(function() {
   $( "#closesearch" ).click(function() { //Klikke på luk søgefunktion
     $( "#closesearch" ).hide();
     $( "#searchicon" ).show();
-    $( "#hamburger" ).show();
+
     $( ".search" ).slideToggle( "fast", function() {
     });
   });

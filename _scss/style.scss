@@ -139,7 +139,7 @@ html {
             color: $invTextColor;
             border-radius: 100px; //helt afrundet
             border: none;
-            font: 1.5em 'Roboto', sans-serif;
+            font: 1.5em $mainFont;
             padding: 0.3em 1em;
             transition: 0.1s;
             max-width: 5em; //Så knappen ikke udvider sig til fuld bredde
@@ -176,7 +176,7 @@ html {
             }
 
             a {
-              font: 1.3em 'Roboto', sans-serif;
+              font: 1.3em $mainFont;
               color: $invTextColor;
               transition: 0.1s;
               display: inline-block;
@@ -239,7 +239,7 @@ html {
       }
       ol li {
         margin: 1em 8px;
-        font: 1.4em 'Roboto',sans-serif;
+        font: 1.4em $mainFont;
         color: $invTextColor;
         position: relative
       }
@@ -247,7 +247,7 @@ html {
         counter-increment: numList;/*Sørger for der tælles op*/
         content: counter(numList);
         float: left;
-        font: 18px 'Roboto', sans-serif; /*Teksten i cirklen*/
+        font: 18px $mainFont; /*Teksten i cirklen*/
         text-align: center;/*Midten af cirklen*/
         color: #fff;
         line-height: 30px;
@@ -543,7 +543,7 @@ html {
             position: absolute;
             left: 25%;//I forhold til det midterste punkt (2)
             top: -302%;//Rykker punkter over teksten
-            font: 44px 'Roboto', sans-serif;
+            font: 44px $mainFont;
             line-height: 60px;
             width: 60px;
             height: 60px;
