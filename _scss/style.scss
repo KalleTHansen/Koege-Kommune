@@ -537,6 +537,17 @@ html {
         margin: 0.5em 8px;
       }
 
+      #connector {
+        display: block;
+        width: 36.5em;
+        position: relative;
+        right: -11px;
+        bottom: -105px;
+        height: 6px;
+        background-color: $accentColor;
+        border: none;
+      }
+
       ol {//Ordered list (123 steps på indholdsside)
         margin: 4em 0 0 0; //Rykker 123 ned
         li {
@@ -547,7 +558,7 @@ html {
           &:before {//Punktelementet (altså 1,2 eller 3), det inden selve indholdet af listeelementet
             display: block;
             position: absolute;
-            left: 25%;//I forhold til det midterste punkt (2)
+            left: 29%;//I forhold til det midterste punkt (2)
             top: -302%;//Rykker punkter over teksten
             font: 44px $mainFont;
             line-height: 60px;
@@ -556,15 +567,15 @@ html {
           }
 
           &#n1 {//Punkt 1 på listen
-            left: 16%;
+            left: 15%;
 
             &:before {//Flytter cirklen uafhængigt af teksten
-              left: 30%;
+              left: 29%;
             }
           }
 
           &#n2 {
-            left: 28%;
+            left: 29.3%;
           }
 
           &#n3 {
