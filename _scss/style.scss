@@ -372,14 +372,26 @@ html {
 
       section {
         margin-left: 8px;
-        max-width: 12em;
+    //    max-width: 12em;
 
         table {
+          float:left;
+          margin-right: 5vw;
           tr {
             td, th {
               font-family: $mainFont;
               color: $invTextColor;
+              padding-bottom: 0.18em;
             }
+          }
+        }
+
+        .footerContact {
+          h4 {
+            font-family: $mainFont;
+            color: $invTextColor;
+            font-weight: bold;
+            margin-bottom: 0.3em;
           }
         }
 
@@ -394,9 +406,14 @@ html {
       }
       div.social {
         width: 8em;
-        position: absolute;
-        right: 0;
-        margin-top: -3.9em;
+        margin: 3em auto;
+        clear: both;
+        height: 1em;
+
+        /*    width: 8em;
+            position: absolute;
+            right: 0;
+            margin-top: -3.9em;*/
       }
 
       a {
@@ -423,6 +440,14 @@ html {
     background-size: auto 100%;
   }
 
+  html body main nav.shortcuts div {
+    min-width: 30%;
+    max-width: 31.7%;
+    a {
+      padding: 1.3em;
+    }
+  }
+
   html body main nav a article.category .bgicon {
     height: 14vmin;
     width: 14vmin;
@@ -441,13 +466,12 @@ html {
     font-size: 1.1em;
   }
 
-  html body main nav.shortcuts div {
-    min-width: 30%;
-    max-width: 31.7%;
-    a {
-      padding: 1.3em;
-    }
+  html body footer div.social {
+    float: right;
+    margin: -6.1em 0;
+    display: block;
   }
+
 }//@media min-width 600px end
 
 @media only screen and (min-width: 930px){//SKIFT OGSÅ I JQ, HVIS DER ÆNDRES HER!
@@ -628,11 +652,15 @@ html {
 
 
     footer {
-      padding: 0.2em 0 3em;
+      padding: 0.2em 0 4em;
 
       div.centerFooter{
         max-width: 1200px;
         margin:auto;
+
+        table {
+          margin-left: 8px;
+        }
 
         section {
           width: 40em;
@@ -647,12 +675,28 @@ html {
             margin: 0 2em 0 8px;
           }
         }
-        div.social {
-          position: initial;
-          float: right;
-          margin-top: -2.5em;
-        }
       }//centerFooter end
+
+      .footerContact {
+          margin: -2.3em auto 0;
+          text-align: center;
+          max-width: 600px;
+
+          h4 {
+            display: none;
+          }
+
+          .contactHeadings {
+           h4 {
+            display: inline-block;
+
+            &:nth-of-type(2){
+              margin-left: 8em;
+              margin-right: 7em;
+            }
+            }
+          }
+      }
     }//Footer end
 
   }//Body end

@@ -1,527 +1,445 @@
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+          box-sizing: border-box; }
 
 html body {
-  margin: 0;
-}
-html body .centerIt {
-  text-align: center;
-}
-html body header .name-and-menu {
-  margin: 15px 8px 10px;
-  height: 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-html body header a {
-  text-decoration: none;
-}
-html body header a#contact {
-  color: #000;
-  display: none;
-  font-family: "Roboto", sans-serif;
-}
-html body header a img {
-  margin: 1em 1em 0 0;
-  height: 4em;
-  display: none;
-}
-html body header a h2 {
-  display: inline;
-  color: #293952;
-  font-family: "Roboto Slab", serif;
-}
-html body header .menuicons {
-  position: absolute;
-  right: 0;
-  margin-right: 8px;
-}
-html body header .menuicons img {
-  width: 2em;
-}
-html body header .menuicons #hamburger, html body header .menuicons #cross {
-  margin-right: 1em;
-}
-html body header .menu {
-  z-index: 1000000;
-  font-weight: normal;
-  font-size: 0.8em;
-  width: 100%;
-  background: #f1f1f1;
-  /*position:absolute; */
-  text-align: center;
-  font-size: 12px;
-}
-html body header .menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
-}
-html body header .menu li {
-  display: block;
-  border-bottom: #dddddd 1px solid;
-}
-html body header .menu li:hover {
-  /*display: block;*/
-  background: #eaeaea;
-  border-bottom: #dddddd 1px solid;
-}
-html body header .menu ul li a {
-  font-family: "Roboto Slab", serif;
-  text-decoration: none;
-  padding: 15px 0 15px 0;
-  margin: 0px;
-  color: #293952;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-html body header .menu ul li a:hover {
-  color: #666;
-  text-decoration: none;
-}
-html body header .menu a {
-  text-decoration: none;
-  color: #666;
-}
-html body header .menu a:hover {
-  text-decoration: none;
-  color: #0fcfbf;
-}
-html body header #currentPage {
-  color: #0fcfbf;
-}
-html body header form.search {
-  text-align: center;
-  margin-bottom: 1em;
-}
-html body header form.search #searchfield {
-  width: 18.9em;
-  border: 2px solid #293952;
-  border-radius: 5px;
-  padding: 0.38em 0.3em 0.2em;
-  margin-right: -0.9em;
-}
-html body header form.search #searchbutton {
-  -webkit-appearance: none;
-  background-color: #293952;
-  border: #293952;
-  border-radius: 5px;
-  color: white;
-  padding: 0.001em 0.5em 0.2em;
-  font-size: 1.5em;
-  line-height: 22px;
-  cursor: pointer;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-html body header form.search #searchbutton:hover {
-  background-color: #0fcfbf;
-  color: #293952;
-}
-html body main {
-  min-height: 70vh;
-  min-height: calc(100vh - 264px);
-}
-html body main.pasOgKoerekort {
-  padding: 1em 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas2.jpg) no-repeat center;
-  background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
-  background-size: 100% auto;
-}
-html body main .bgColor {
-  padding: 1em 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7)));
-  background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
-  background-size: 100% auto;
-}
-html body main .padbot {
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
-html body main h1 {
-  font-size: 2em;
-}
-html body main h2 {
-  color: white;
-  font-family: "Roboto Slab", serif;
-  margin-left: 8px;
-}
-html body main .notinv {
-  color: #293952;
-}
-html body main a.linkButton {
-  display: block;
-  margin: auto auto 2em 97px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #293952;
-  color: white;
-  border-radius: 100px;
-  border: none;
-  font: 1.5em "Roboto", sans-serif;
-  padding: 0.3em 1em;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  max-width: 5em;
-}
-html body main a:hover {
-  background-color: #0fcfbf;
-  color: #000;
-  cursor: pointer;
-}
-html body main nav.shortcuts {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-html body main nav.shortcuts div {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  min-width: 150px;
-  max-width: 47%;
-  border-radius: 5px;
-  background-color: #293952;
-  text-align: center;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  margin: 0.3em;
-}
-html body main nav.shortcuts div:hover {
-  background-color: #0fcfbf;
-}
-html body main nav.shortcuts div a {
-  font: 1.3em "Roboto", sans-serif;
-  color: white;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  display: inline-block;
-  padding: 0.5em;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-html body main nav.shortcuts div a:hover {
-  background-color: #0fcfbf;
-  color: #293952;
-}
-html body main h1 {
-  font-family: "Roboto Slab", serif;
-  margin: 0.2em 8px 0.5em;
-  color: white;
-}
-html body main h2 {
-  font-family: "Roboto Slab", serif;
-  color: white;
-}
-html body main h4 {
-  margin-bottom: 0.5em;
-}
-html body main p {
-  font-family: "Roboto", sans-serif;
-  margin: 0.5em 8px 1em;
-  color: white;
-}
-html body main p.breadcrumb {
-  margin-bottom: 0.2em;
-  font-size: 0.8em;
-}
-html body main p.breadcrumb a {
-  color: white;
-  text-decoration: none;
-}
-html body main p.breadcrumb a:hover {
-  color: #0fcfbf;
-  background: none;
-}
-html body main ol {
-  display: block;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  counter-reset: numList;
-  /*Sørger for der tælles op*/
-}
-html body main ol li {
-  margin: 1em 8px;
-  font: 1.4em "Roboto", sans-serif;
-  color: white;
-  position: relative;
-}
-html body main ol li:before {
-  /*Cirklen*/
-  counter-increment: numList;
-  /*Sørger for der tælles op*/
-  content: counter(numList);
-  float: left;
-  font: 18px "Roboto", sans-serif;
-  /*Teksten i cirklen*/
-  text-align: center;
-  /*Midten af cirklen*/
-  color: #fff;
-  line-height: 30px;
-  width: 30px;
-  height: 30px;
-  background: #293952;
-  margin-right: 1em;
-  border-radius: 999px;
-}
-html body main .accordion h3 {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-}
-html body main .accordion p {
-  color: #000;
-  margin-left: 0;
-}
-html body main .accordion ul li {
-  color: black;
-}
-html body main .accordion table tr th {
-  text-align: left;
-}
-html body main .accordion table tr td {
-  padding-right: 2em;
-}
-html body main nav#navgrid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-html body main nav#navgrid a:hover {
-  background: none;
-}
-html body main nav a {
-  margin: 2vw;
-  color: #000;
-  text-decoration: none;
-}
-html body main nav a article.category {
-  width: 46vw;
-  height: 100%;
-  padding: 3vw;
-  background-color: #eee;
-  border: 1px solid grey;
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  border-radius: 5px;
-}
-html body main nav a article.category:hover {
-  background-color: white;
-}
-html body main nav a article.category:hover .icon {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
-}
-html body main nav a article.category h3 {
-  margin-bottom: 0.8em;
-  font-size: 0.8em;
-  font-family: "Roboto Slab", serif;
-  font-weight: normal;
-}
-html body main nav a article.category table.center {
-  margin: 0 auto;
-}
-html body main nav a article.category .bgicon {
-  height: 16vmin;
-  width: 16vmin;
-  background-color: #293952;
-  border-radius: 50%;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-html body main nav a article.category .bgicon .icon {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  width: 55%;
-  vertical-align: middle;
-}
-html body footer {
-  background-color: #293952;
-  padding: 0.8% 0 5%;
-}
-html body footer section {
-  margin-left: 8px;
-  max-width: 12em;
-}
-html body footer section table tr td, html body footer section table tr th {
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-html body footer section h2 {
-  font-family: "Roboto Slab", serif;
-  color: white;
-}
-html body footer section a {
-  margin-bottom: 0.4em;
-}
-html body footer div.social {
-  width: 8em;
-  position: absolute;
-  right: 0;
-  margin-top: -3.9em;
-}
-html body footer a {
-  font-family: "Roboto", sans-serif;
-  color: white;
-  display: block;
-  text-decoration: none;
-}
-html body footer a img {
-  width: 43%;
-  float: left;
-  margin-right: 8px;
-}
+  margin: 0; }
+  html body .centerIt {
+    text-align: center; }
+  html body header .name-and-menu {
+    margin: 15px 8px 10px;
+    height: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  html body header a {
+    text-decoration: none; }
+    html body header a#contact {
+      color: #000;
+      display: none;
+      font-family: "Roboto", sans-serif; }
+    html body header a img {
+      margin: 1em 1em 0 0;
+      height: 4em;
+      display: none; }
+    html body header a h2 {
+      display: inline;
+      color: #293952;
+      font-family: "Roboto Slab", serif; }
+  html body header .menuicons {
+    position: absolute;
+    right: 0;
+    margin-right: 8px; }
+    html body header .menuicons img {
+      width: 2em; }
+    html body header .menuicons #hamburger, html body header .menuicons #cross {
+      margin-right: 1em; }
+  html body header .menu {
+    z-index: 1000000;
+    font-weight: normal;
+    font-size: 0.8em;
+    width: 100%;
+    background: #f1f1f1;
+    /*position:absolute; */
+    text-align: center;
+    font-size: 12px; }
+  html body header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none; }
+  html body header .menu li {
+    display: block;
+    border-bottom: #dddddd 1px solid; }
+  html body header .menu li:hover {
+    /*display: block;*/
+    background: #eaeaea;
+    border-bottom: #dddddd 1px solid; }
+  html body header .menu ul li a {
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    padding: 15px 0 15px 0;
+    margin: 0px;
+    color: #293952;
+    display: block;
+    width: 100%;
+    height: 100%; }
+  html body header .menu ul li a:hover {
+    color: #666;
+    text-decoration: none; }
+  html body header .menu a {
+    text-decoration: none;
+    color: #666; }
+  html body header .menu a:hover {
+    text-decoration: none;
+    color: #0fcfbf; }
+  html body header #currentPage {
+    color: #0fcfbf; }
+  html body header form.search {
+    text-align: center;
+    margin-bottom: 1em; }
+    html body header form.search #searchfield {
+      width: 18.9em;
+      border: 2px solid #293952;
+      border-radius: 5px;
+      padding: 0.38em 0.3em 0.2em;
+      margin-right: -0.9em; }
+    html body header form.search #searchbutton {
+      -webkit-appearance: none;
+      background-color: #293952;
+      border: #293952;
+      border-radius: 5px;
+      color: white;
+      padding: 0.001em 0.5em 0.2em;
+      font-size: 1.5em;
+      line-height: 22px;
+      cursor: pointer;
+      -webkit-transition: 0.1s;
+      transition: 0.1s; }
+      html body header form.search #searchbutton:hover {
+        background-color: #0fcfbf;
+        color: #293952; }
+  html body main {
+    min-height: 70vh;
+    min-height: calc(100vh - 264px); }
+    html body main.pasOgKoerekort {
+      padding: 1em 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas2.jpg) no-repeat center;
+      background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
+      background-size: 100% auto; }
+    html body main .bgColor {
+      padding: 1em 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7)));
+      background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
+      background-size: 100% auto; }
+    html body main .padbot {
+      padding-bottom: 1em;
+      padding-top: 1em; }
+    html body main h1 {
+      font-size: 2em; }
+    html body main h2 {
+      color: white;
+      font-family: "Roboto Slab", serif;
+      margin-left: 8px; }
+    html body main .notinv {
+      color: #293952; }
+    html body main a.linkButton {
+      display: block;
+      margin: auto auto 2em 97px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #293952;
+      color: white;
+      border-radius: 100px;
+      border: none;
+      font: 1.5em "Roboto", sans-serif;
+      padding: 0.3em 1em;
+      -webkit-transition: 0.1s;
+      transition: 0.1s;
+      max-width: 5em; }
+    html body main a:hover {
+      background-color: #0fcfbf;
+      color: #000;
+      cursor: pointer; }
+    html body main nav.shortcuts {
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      html body main nav.shortcuts div {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        min-width: 150px;
+        max-width: 47%;
+        border-radius: 5px;
+        background-color: #293952;
+        text-align: center;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+        margin: 0.3em; }
+        html body main nav.shortcuts div:hover {
+          background-color: #0fcfbf; }
+        html body main nav.shortcuts div a {
+          font: 1.3em "Roboto", sans-serif;
+          color: white;
+          -webkit-transition: 0.1s;
+          transition: 0.1s;
+          display: inline-block;
+          padding: 0.5em;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 5px; }
+          html body main nav.shortcuts div a:hover {
+            background-color: #0fcfbf;
+            color: #293952; }
+    html body main h1 {
+      font-family: "Roboto Slab", serif;
+      margin: 0.2em 8px 0.5em;
+      color: white; }
+    html body main h2 {
+      font-family: "Roboto Slab", serif;
+      color: white; }
+    html body main h4 {
+      margin-bottom: 0.5em; }
+    html body main p {
+      font-family: "Roboto", sans-serif;
+      margin: 0.5em 8px 1em;
+      color: white; }
+      html body main p.breadcrumb {
+        margin-bottom: 0.2em;
+        font-size: 0.8em; }
+        html body main p.breadcrumb a {
+          color: white;
+          text-decoration: none; }
+          html body main p.breadcrumb a:hover {
+            color: #0fcfbf;
+            background: none; }
+    html body main ol {
+      display: block;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      counter-reset: numList;
+      /*Sørger for der tælles op*/ }
+    html body main ol li {
+      margin: 1em 8px;
+      font: 1.4em "Roboto", sans-serif;
+      color: white;
+      position: relative; }
+    html body main ol li:before {
+      /*Cirklen*/
+      counter-increment: numList;
+      /*Sørger for der tælles op*/
+      content: counter(numList);
+      float: left;
+      font: 18px "Roboto", sans-serif;
+      /*Teksten i cirklen*/
+      text-align: center;
+      /*Midten af cirklen*/
+      color: #fff;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      background: #293952;
+      margin-right: 1em;
+      border-radius: 999px; }
+    html body main .accordion h3 {
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+/Edge */
+      user-select: none;
+      /* Standard */ }
+    html body main .accordion p {
+      color: #000;
+      margin-left: 0; }
+    html body main .accordion ul li {
+      color: black; }
+    html body main .accordion table tr th {
+      text-align: left; }
+    html body main .accordion table tr td {
+      padding-right: 2em; }
+    html body main nav#navgrid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      html body main nav#navgrid a:hover {
+        background: none; }
+    html body main nav a {
+      margin: 2vw;
+      color: #000;
+      text-decoration: none; }
+      html body main nav a article.category {
+        width: 46vw;
+        height: 100%;
+        padding: 3vw;
+        background-color: #eee;
+        border: 1px solid grey;
+        text-align: center;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        border-radius: 5px; }
+        html body main nav a article.category:hover {
+          background-color: white; }
+          html body main nav a article.category:hover .icon {
+            -webkit-transform: scale(1.3, 1.3);
+                    transform: scale(1.3, 1.3); }
+        html body main nav a article.category h3 {
+          margin-bottom: 0.8em;
+          font-size: 0.8em;
+          font-family: "Roboto Slab", serif;
+          font-weight: normal; }
+        html body main nav a article.category table.center {
+          margin: 0 auto; }
+        html body main nav a article.category .bgicon {
+          height: 16vmin;
+          width: 16vmin;
+          background-color: #293952;
+          border-radius: 50%;
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle; }
+          html body main nav a article.category .bgicon .icon {
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+            width: 55%;
+            vertical-align: middle; }
+  html body footer {
+    background-color: #293952;
+    padding: 0.8% 0 5%; }
+    html body footer section {
+      margin-left: 8px; }
+      html body footer section table {
+        float: left;
+        margin-right: 5vw; }
+        html body footer section table tr td, html body footer section table tr th {
+          font-family: "Roboto", sans-serif;
+          color: white;
+          padding-bottom: 0.18em; }
+      html body footer section .footerContact h4 {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 0.3em; }
+      html body footer section h2 {
+        font-family: "Roboto Slab", serif;
+        color: white; }
+      html body footer section a {
+        margin-bottom: 0.4em; }
+    html body footer div.social {
+      width: 8em;
+      margin: 3em auto;
+      clear: both;
+      height: 1em;
+      /*    width: 8em;
+          position: absolute;
+          right: 0;
+          margin-top: -3.9em;*/ }
+    html body footer a {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      display: block;
+      text-decoration: none; }
+      html body footer a img {
+        width: 43%;
+        float: left;
+        margin-right: 8px; }
 
 @media only screen and (min-width: 600px) {
   html body main.pasOgKoerekort {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7))), url(../img/pas3.jpg) no-repeat right;
     background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas3.jpg) no-repeat right;
-    background-size: auto 100%;
-  }
-
-  html body main nav a article.category .bgicon {
-    height: 14vmin;
-    width: 14vmin;
-  }
-
-  html body main nav a.catlink {
-    margin: 1vw;
-  }
-
-  html body main nav a article.category {
-    width: 31.33vw;
-    padding: 2vw;
-  }
-
-  html body main nav a article.category h3 {
-    font-size: 1.1em;
-  }
+    background-size: auto 100%; }
 
   html body main nav.shortcuts div {
     min-width: 30%;
-    max-width: 31.7%;
-  }
-  html body main nav.shortcuts div a {
-    padding: 1.3em;
-  }
-}
+    max-width: 31.7%; }
+    html body main nav.shortcuts div a {
+      padding: 1.3em; }
+
+  html body main nav a article.category .bgicon {
+    height: 14vmin;
+    width: 14vmin; }
+
+  html body main nav a.catlink {
+    margin: 1vw; }
+
+  html body main nav a article.category {
+    width: 31.33vw;
+    padding: 2vw; }
+
+  html body main nav a article.category h3 {
+    font-size: 1.1em; }
+
+  html body footer div.social {
+    float: right;
+    margin: -6.1em 0;
+    display: block; } }
 @media only screen and (min-width: 930px) {
   html body header {
     height: 5em;
     margin: auto auto 1.5em;
-    max-width: 1200px;
-  }
-  html body header .name-and-menu {
-    position: absolute;
-    height: auto;
-    width: 11%;
-  }
-  html body header .name-and-menu a img {
-    display: block;
-    margin: 0 1em 0 0;
-  }
-  html body header .name-and-menu a h2 {
-    word-spacing: 100vw;
-    margin-top: 1.5em;
-    width: 30%;
-  }
-  html body header .name-and-menu .menuicons {
-    display: none;
-  }
-  html body header .menu {
-    background: none;
-    max-width: 1200px;
-  }
-  html body header .menu ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-top: 2.5em;
-    border: none;
-  }
-  html body header .menu ul li {
-    border: none;
-  }
-  html body header .menu ul li:last-of-type {
-    display: none;
-  }
-  html body header .menu ul li:hover {
-    border: none;
-    background: none;
-  }
-  html body header .menu ul li a {
-    display: inline;
-    padding: 0 1em;
-    background: none;
-    font-size: 2em;
-  }
-  html body header .menu ul li a:hover {
-    display: inline;
-    background: none;
-    padding: 0 1em;
-  }
-  html body header a#contact {
-    text-align: right;
-    display: block;
-    margin-bottom: 0.5em;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
-  }
-  html body header a#contact:hover {
-    color: #0fcfbf;
-  }
-  html body header form.search {
-    display: inline;
-    float: right;
-    margin: -2.6em 8px 0;
-  }
-  html body header form.search #searchfield {
-    width: 12em;
-  }
+    max-width: 1200px; }
+    html body header .name-and-menu {
+      position: absolute;
+      height: auto;
+      width: 11%; }
+      html body header .name-and-menu a img {
+        display: block;
+        margin: 0 1em 0 0; }
+      html body header .name-and-menu a h2 {
+        word-spacing: 100vw;
+        margin-top: 1.5em;
+        width: 30%; }
+      html body header .name-and-menu .menuicons {
+        display: none; }
+    html body header .menu {
+      background: none;
+      max-width: 1200px; }
+      html body header .menu ul {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-top: 2.5em;
+        border: none; }
+        html body header .menu ul li {
+          border: none; }
+          html body header .menu ul li:last-of-type {
+            display: none; }
+          html body header .menu ul li:hover {
+            border: none;
+            background: none; }
+          html body header .menu ul li a {
+            display: inline;
+            padding: 0 1em;
+            background: none;
+            font-size: 2em; }
+            html body header .menu ul li a:hover {
+              display: inline;
+              background: none;
+              padding: 0 1em; }
+    html body header a#contact {
+      text-align: right;
+      display: block;
+      margin-bottom: 0.5em;
+      -webkit-transition: 0.1s;
+      transition: 0.1s; }
+      html body header a#contact:hover {
+        color: #0fcfbf; }
+    html body header form.search {
+      display: inline;
+      float: right;
+      margin: -2.6em 8px 0; }
+      html body header form.search #searchfield {
+        width: 12em; }
   html body main .bgColor a.linkButton {
     margin: 0.5em auto 2em;
-    font-size: 2em;
-  }
+    font-size: 2em; }
   html body main .mainpage {
     margin: auto;
-    max-width: 1100px;
-  }
+    max-width: 1100px; }
   html body main .padbot {
-    padding-bottom: 3em;
-  }
+    padding-bottom: 3em; }
   html body main h1 {
-    margin: 0.5em 8px;
-  }
+    margin: 0.5em 8px; }
   html body main #connector {
     display: block;
     width: 36.5em;
@@ -530,100 +448,82 @@ html body footer a img {
     bottom: -105px;
     height: 6px;
     background-color: #0fcfbf;
-    border: none;
-  }
+    border: none; }
   html body main ol {
-    margin: 4em 0 0 0;
-  }
-  html body main ol li {
-    display: inline-block;
-    position: relative;
-    margin: 4em 8px 2em;
-  }
-  html body main ol li:before {
-    display: block;
-    position: absolute;
-    left: 29%;
-    top: -302%;
-    font: 44px "Roboto", sans-serif;
-    line-height: 60px;
-    width: 60px;
-    height: 60px;
-  }
-  html body main ol li#n1 {
-    left: 15%;
-  }
-  html body main ol li#n1:before {
-    left: 29%;
-  }
-  html body main ol li#n2 {
-    left: 29.3%;
-  }
-  html body main ol li#n3 {
-    left: 40%;
-  }
-  html body main ol li#n3:before {
-    left: 35%;
-  }
+    margin: 4em 0 0 0; }
+    html body main ol li {
+      display: inline-block;
+      position: relative;
+      margin: 4em 8px 2em; }
+      html body main ol li:before {
+        display: block;
+        position: absolute;
+        left: 29%;
+        top: -302%;
+        font: 44px "Roboto", sans-serif;
+        line-height: 60px;
+        width: 60px;
+        height: 60px; }
+      html body main ol li#n1 {
+        left: 15%; }
+        html body main ol li#n1:before {
+          left: 29%; }
+      html body main ol li#n2 {
+        left: 29.3%; }
+      html body main ol li#n3 {
+        left: 40%; }
+        html body main ol li#n3:before {
+          left: 35%; }
   html body main .accordion {
-    overflow: auto;
-  }
-  html body main .accordion section {
-    width: 48.5%;
-    display: inline-grid;
-  }
-  html body main .accordion section:nth-of-type(2) {
-    float: right;
-  }
+    overflow: auto; }
+    html body main .accordion section {
+      width: 48.5%;
+      display: inline-grid; }
+      html body main .accordion section:nth-of-type(2) {
+        float: right; }
   html body footer {
-    padding: 0.2em 0 3em;
-  }
-  html body footer div.centerFooter {
-    max-width: 1200px;
-    margin: auto;
-  }
-  html body footer div.centerFooter section {
-    width: 40em;
-    display: inline;
-  }
-  html body footer div.centerFooter section h2 {
-    margin-left: 8px;
-  }
-  html body footer div.centerFooter section a {
-    display: inline;
-    margin: 0 2em 0 8px;
-  }
-  html body footer div.centerFooter div.social {
-    position: initial;
-    float: right;
-    margin-top: -2.5em;
-  }
-}
+    padding: 0.2em 0 4em; }
+    html body footer div.centerFooter {
+      max-width: 1200px;
+      margin: auto; }
+      html body footer div.centerFooter table {
+        margin-left: 8px; }
+      html body footer div.centerFooter section {
+        width: 40em;
+        display: inline; }
+        html body footer div.centerFooter section h2 {
+          margin-left: 8px; }
+        html body footer div.centerFooter section a {
+          display: inline;
+          margin: 0 2em 0 8px; }
+    html body footer .footerContact {
+      margin: -2.3em auto 0;
+      text-align: center;
+      max-width: 600px; }
+      html body footer .footerContact h4 {
+        display: none; }
+      html body footer .footerContact .contactHeadings h4 {
+        display: inline-block; }
+        html body footer .footerContact .contactHeadings h4:nth-of-type(2) {
+          margin-left: 8em;
+          margin-right: 7em; } }
 @media only screen and (min-width: 1100px) {
   html body main nav a.catlink {
-    margin: 0.6em;
-  }
-  html body main nav a.catlink img#house {
-    margin-top: -0.8em;
-  }
-  html body main nav a.catlink img#heart {
-    margin-bottom: -0.8em;
-  }
+    margin: 0.6em; }
+    html body main nav a.catlink img#house {
+      margin-top: -0.8em; }
+    html body main nav a.catlink img#heart {
+      margin-bottom: -0.8em; }
 
   html body main nav a article.category {
     width: 15.98em;
     padding: 1.2em;
-    border-radius: 10px;
-  }
+    border-radius: 10px; }
 
   html body main nav a article.top3 {
-    width: 21.71em;
-  }
+    width: 21.71em; }
 
   html body main nav.shortcuts div {
-    border-radius: 10px;
-  }
-  html body main nav.shortcuts div a {
-    border-radius: 10px;
-  }
-}
+    border-radius: 10px; }
+    html body main nav.shortcuts div a {
+      border-radius: 10px; } }
