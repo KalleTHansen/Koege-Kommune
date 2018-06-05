@@ -373,6 +373,10 @@ html body footer section {
   margin-left: 8px;
   max-width: 12em;
 }
+html body footer section table tr td, html body footer section table tr th {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
 html body footer section h2 {
   font-family: "Roboto Slab", serif;
   color: white;
