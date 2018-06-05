@@ -143,6 +143,10 @@ html body main .bgColor {
   background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
   background-size: 100% auto;
 }
+html body main .padbot {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
 html body main h1 {
   font-size: 2em;
 }
@@ -502,6 +506,7 @@ html body footer a img {
   }
   html body main .bgColor a.linkButton {
     margin: 0.5em auto 2em;
+    font-size: 2em;
   }
   html body main .mainpage {
     margin: auto;
@@ -509,7 +514,6 @@ html body footer a img {
   }
   html body main .padbot {
     padding-bottom: 3em;
-    padding-top: 1em;
   }
   html body main h1 {
     margin: 0.5em 8px;

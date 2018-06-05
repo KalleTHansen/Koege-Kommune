@@ -121,6 +121,11 @@ html {
         background-size: 100% auto;
       }
 
+      .padbot {
+        padding-bottom: 1em;
+        padding-top: 1em;
+      }
+
         h1 {
           font-size: 2em;
         }
@@ -529,6 +534,7 @@ html {
       .bgColor {
         a.linkButton {
           margin: 0.5em auto 2em;
+          font-size: 2em;
         }
       }
 
@@ -539,7 +545,6 @@ html {
 
       .padbot {
         padding-bottom: 3em;
-        padding-top: 1em;
       }
 
       h1 {
