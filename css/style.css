@@ -137,21 +137,24 @@ html body main.pasOgKoerekort {
   background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7)), url(../img/pas2.jpg) no-repeat center;
   background-size: 100% auto;
 }
-html body main.bgColor {
+html body main .bgColor {
   padding: 1em 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 92, 209, 0.7)), to(rgba(7, 92, 209, 0.7)));
   background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
   background-size: 100% auto;
 }
-html body main.bgColor h1 {
+html body main h1 {
   font-size: 2em;
 }
-html body main.bgColor h2 {
+html body main h2 {
   color: white;
   font-family: "Roboto Slab", serif;
   margin-left: 8px;
 }
-html body main.bgColor a.linkButton {
+html body main .notinv {
+  color: #293952;
+}
+html body main a.linkButton {
   display: block;
   margin: auto auto 2em 97px;
   text-align: center;
@@ -166,7 +169,7 @@ html body main.bgColor a.linkButton {
   transition: 0.1s;
   max-width: 5em;
 }
-html body main.bgColor a:hover {
+html body main a:hover {
   background-color: #0fcfbf;
   color: #000;
   cursor: pointer;
@@ -497,12 +500,16 @@ html body footer a img {
   html body header form.search #searchfield {
     width: 12em;
   }
-  html body main.bgColor a.linkButton {
-    margin: 0.5em auto 3em;
+  html body main .bgColor a.linkButton {
+    margin: 0.5em auto 2em;
   }
   html body main .mainpage {
     margin: auto;
     max-width: 1100px;
+  }
+  html body main .padbot {
+    padding-bottom: 3em;
+    padding-top: 1em;
   }
   html body main h1 {
     margin: 0.5em 8px;

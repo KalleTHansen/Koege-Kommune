@@ -115,10 +115,11 @@ html {
         background-size: 100% auto;
       }
 
-      &.bgColor {
+      .bgColor {
         padding: 1em 0;
         background: linear-gradient(rgba(7, 92, 209, 0.7), rgba(7, 92, 209, 0.7));
         background-size: 100% auto;
+      }
 
         h1 {
           font-size: 2em;
@@ -127,6 +128,9 @@ html {
           color: $invTextColor;
           font-family: $headingFont;
           margin-left: 8px;
+        }
+        .notinv {
+          color: $primaryColor;
         }
         a {//Alle links i main
 
@@ -152,7 +156,7 @@ html {
 
           }
         }
-      }
+
 
       nav {
         &.shortcuts {
@@ -522,15 +526,20 @@ html {
     }//Header end
 
     main {
-      &.bgColor {
+      .bgColor {
         a.linkButton {
-          margin: 0.5em auto 3em;
+          margin: 0.5em auto 2em;
         }
       }
 
       .mainpage { //Tillader fuldskærms bg img på main, centrerer.
         margin: auto;
         max-width: 1100px;
+      }
+
+      .padbot {
+        padding-bottom: 3em;
+        padding-top: 1em;
       }
 
       h1 {
